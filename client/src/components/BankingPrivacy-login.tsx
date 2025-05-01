@@ -33,7 +33,7 @@ const BankingPrivacy = () => {
             href="/enquadramento"
             className="inline-block text-[#081b33] hover:text-[#d4af37] text-lg font-medium underline transition duration-200"
           >
-            ← Voltar ao Enquadramento Legal
+            Clica aqui para ver o Enquadramento Legal
           </Link>
         </div>
       </div>
