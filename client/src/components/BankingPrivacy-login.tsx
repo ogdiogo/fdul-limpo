@@ -7,11 +7,17 @@ const BankingPrivacy = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
         <div className="text-center mb-10">
-        <h2 className="text-5xl font-extrabold text-[#081b33] tracking-tight relative inline-block pb-4">
+        <h2 className="text-5xl font-extrabold text-[#081b33] tracking-tight relative pb-4 text-left">
           Sigilo Bancário
-          <span className="block text-lg text-[#d4af37] font-medium mt-1 italic">O compromisso que o protege</span>
-          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-[#d4af37] rounded-full transition-all duration-300"></span>
+          <span className="block text-lg text-[#d4af37] font-medium mt-1 italic">
+            O compromisso que o protege
+          </span>
+          <span className="block text-sm text-[#081b33]/80 mt-2 font-medium">
+            Bem-vinda, Prof. Regente Rute Saraiva
+          </span>
+          <span className="block w-24 h-1 bg-[#d4af37] rounded-full mt-2"></span>
         </h2>
+
         </div>
 
         {/* Main Content */}
