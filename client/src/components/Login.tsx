@@ -1,24 +1,32 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { LogIn } from "lucide-react";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const loginRef = useRef<HTMLDivElement | null>(null);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Implement your login logic here
     console.log("Logging in with", { email, password });
   };
 
-  // Scroll to top when the component is mounted
   useEffect(() => {
+    // Trigger the animation when the component mounts
+    if (loginRef.current) {
+      loginRef.current.classList.add("slide-in");
+    }
+
+    // Scroll to top when the component is mounted
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-[#f8f9fa] px-4">
-      <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-md">
+      <div
+        ref={loginRef}
+        className="bg-white shadow-lg rounded-xl p-8 w-full max-w-md opacity-0"
+      >
         <div className="text-center mb-6">
           <LogIn className="mx-auto text-[#081b33] w-10 h-10 mb-2" />
           <h2 className="text-2xl font-bold text-[#081b33]">Área de Cliente</h2>
