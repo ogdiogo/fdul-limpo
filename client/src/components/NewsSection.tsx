@@ -13,7 +13,7 @@ interface NewsItem {
 const newsItems: NewsItem[] = [
   {
     id: 1,
-    title: "Glosadores e Associados Lança Novo Programa de Investimentos Sustentáveis",
+    title: "Glosadores e Associados lança novo programa de investimentos sustentáveis",
     date: "15 de Abril, 2025",
     description: "Conheça o nosso novo programa de investimentos focado em empresas com práticas ambientais socialmente responsáveis.",
     image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
@@ -21,7 +21,7 @@ const newsItems: NewsItem[] = [
   },
   {
     id: 2,
-    title: "Novas Medidas de Segurança para Transações Online",
+    title: "Novas medidas de segurança para transações online",
     date: "02 de Abril, 2025",
     description: "Implementámos novas tecnologias de autenticação de dois fatores (2FA) para garantir a segurança das suas operações bancárias online.",
     image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
@@ -29,7 +29,7 @@ const newsItems: NewsItem[] = [
   },
   {
     id: 3,
-    title: "Glosadores e Associados Expande Rede de Agências no Interior",
+    title: "Glosadores e Associados expande rede de agências no interior",
     date: "18 de Março, 2025",
     description: "Inaugurámos cinco novas agências no interior do país de forma a estarmos mais próximos dos nossos clientes em áreas em crescimento.",
     image: "https://i.imgur.com/VH0Odhoh.jpg",
@@ -67,7 +67,7 @@ const NewsSection = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-[#081b33]">{item.title}</h3>
                 <p className="text-gray-600 mb-4 leading-relaxed">{item.description}</p>
-                <a href="#" className="text-[#b8860b] font-medium hover:text-[#d4af37] inline-flex items-center font-serif">
+                <a href="#" className="text-[#b8860b] font-medium hover:text-[#d4af37] inline-flex items-center font-avenir">
                   Leia mais
                   <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
