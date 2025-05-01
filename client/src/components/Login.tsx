@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { LogIn, Eye, EyeOff } from "lucide-react";
+import { useLocation } from "wouter"; // Import useLocation for navigation
 
 const Login = () => {
   const [email, setEmail] = useState("prof.regente.rutesaraiva@fd.ulisboa.pt");
   const [password, setPassword] = useState("direitodosmercadosfinanceiros");
   const [passwordVisible, setPasswordVisible] = useState(false);
+  const [, navigate] = useLocation(); // useLocation returns [location, navigate]
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -13,6 +15,7 @@ const Login = () => {
       password === "direitodosmercadosfinanceiros"
     ) {
       console.log("Login successful!");
+      navigate("/banking-privacy-login"); // Redirect on success
     } else {
       console.log("Incorrect credentials");
       alert("Incorrect email or password");
