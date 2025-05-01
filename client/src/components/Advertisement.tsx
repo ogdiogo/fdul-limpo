@@ -12,7 +12,7 @@ const Advertisement = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-[#f5f5dc]">
-                Nova Coleção de Tote Bags Marc Jacobs
+                Nova Coleção de The Tote Bag Marc Jacobs
               </h3>
               <p className="text-[#f5f5dc]/90 mb-6">
                 Descubra o equilíbrio perfeito entre estilo e funcionalidade com a nova 

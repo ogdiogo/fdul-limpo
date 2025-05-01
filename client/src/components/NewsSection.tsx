@@ -15,7 +15,7 @@ const newsItems: NewsItem[] = [
     id: 1,
     title: "Glosadores e Associados Lança Novo Programa de Investimentos Sustentáveis",
     date: "15 de Abril, 2025",
-    description: "Conheça nosso novo programa de investimentos focado em empresas com práticas ambientais e sociais responsáveis.",
+    description: "Conheça o nosso novo programa de investimentos focado em empresas com práticas ambientais socialmente responsáveis.",
     image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
     alt: "Investimentos Sustentáveis"
   },
@@ -23,7 +23,7 @@ const newsItems: NewsItem[] = [
     id: 2,
     title: "Novas Medidas de Segurança para Transações Online",
     date: "02 de Abril, 2025",
-    description: "Implementamos novas tecnologias de autenticação em duas etapas para garantir a segurança de suas operações bancárias online.",
+    description: "Implementámos novas tecnologias de autenticação de dois fatores (2FA) para garantir a segurança das suas operações bancárias online.",
     image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
     alt: "Segurança Digital"
   },
@@ -31,7 +31,7 @@ const newsItems: NewsItem[] = [
     id: 3,
     title: "Glosadores e Associados Expande Rede de Agências no Interior",
     date: "18 de Março, 2025",
-    description: "Inauguramos cinco novas agências no interior do país para estar mais próximos de nossos clientes em áreas em crescimento.",
+    description: "Inaugurámos cinco novas agências no interior do país de forma a estarmos mais próximos dos nossos clientes em áreas em crescimento.",
     image: "https://i.imgur.com/VH0Odhoh.jpg",
     alt: "Novas Agências"
   }
