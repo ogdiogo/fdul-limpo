@@ -1,11 +1,10 @@
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import { LogIn, Eye, EyeOff } from "lucide-react";
 
 const Login = () => {
   const [email, setEmail] = useState("prof.regente.rutesaraiva@fd.ulisboa.pt");
   const [password, setPassword] = useState("direitodosmercadosfinanceiros");
   const [passwordVisible, setPasswordVisible] = useState(false);
-  const loginRef = useRef<HTMLDivElement | null>(null);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -20,16 +19,9 @@ const Login = () => {
     }
   };
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <section className="py-12 flex items-center justify-center bg-[#f8f9fa] px-4">
-      <div
-        ref={loginRef}
-        className="bg-white shadow-lg rounded-xl p-6 w-full max-w-sm transition-opacity opacity-0"
-      >
+      <div className="bg-white shadow-lg rounded-xl p-6 w-full max-w-sm">
         <div className="text-center mb-4">
           <LogIn className="mx-auto text-[#081b33] w-10 h-10 mb-2" />
           <h2 className="text-xl font-semibold text-[#081b33]">Área de Cliente</h2>
