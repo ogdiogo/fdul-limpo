@@ -102,7 +102,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-[#d4af37]/30 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-[#f5f5dc]/70">© 2023 Glosadores e Associados. Todos os direitos reservados.</p>
+          <p className="text-[#f5f5dc]/70">© 2025 Glosadores e Associados. Todos os direitos reservados.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-[#f5f5dc]/70 hover:text-[#d4af37]">Política de Privacidade</a>
             <a href="#" className="text-[#f5f5dc]/70 hover:text-[#d4af37]">Termos de Serviço</a>
