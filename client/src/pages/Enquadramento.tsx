@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Helmet } from "react-helmet";  // Import Helmet for page metadata
-import EnquadramentoContent from "@/components/Enquadramento/Enquadramento";  // Import the content component
+import EnquadramentoContent from "@/components/Enquadramento";  // Import the content component
 
 const EnquadramentoPage = () => {
   return (
