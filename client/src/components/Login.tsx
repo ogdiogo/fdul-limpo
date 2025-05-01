@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { LogIn } from "lucide-react";
 
 const Login = () => {
@@ -10,6 +10,11 @@ const Login = () => {
     // Implement your login logic here
     console.log("Logging in with", { email, password });
   };
+
+  // Scroll to top when the component is mounted
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-[#f8f9fa] px-4">
