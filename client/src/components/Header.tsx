@@ -4,16 +4,19 @@ import { Menu, X, Phone, Mail } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [location] = useLocation();
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // Add state to track login status
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const isActive = (path: string) => location === path;
 
   useEffect(() => {
+    // Update login state whenever the location changes
     const flag = localStorage.getItem("isLoggedIn");
     setIsLoggedIn(flag === "true");
-  }, []);
+  }, [location]);
+
+  const sigiloHref = isLoggedIn ? "/banking-privacy-login" : "/banking-privacy";
 
   return (
     <header className="bg-gradient-banking text-[#f5f5dc] shadow-md">
@@ -53,9 +56,9 @@ const Header = () => {
                 Home
               </Link>
               <Link
-                href={isLoggedIn ? "/banking-privacy-login" : "/banking-privacy"} // Update the href dynamically
+                href={sigiloHref}
                 className={`nav-link text-xl font-bold uppercase tracking-wider px-4 py-1 ${
-                  isActive("/banking-privacy")
+                  isActive("/banking-privacy") || isActive("/banking-privacy-login")
                     ? "text-[#d4af37] border-b-2 border-[#d4af37]"
                     : "text-[#d4af37]/90 hover:text-[#d4af37] hover:border-b-2 hover:border-[#d4af37]/60"
                 }`}
@@ -108,9 +111,9 @@ const Header = () => {
             Home
           </Link>
           <Link
-            href={isLoggedIn ? "/banking-privacy-login" : "/banking-privacy"} // Update the href dynamically for mobile menu
+            href={sigiloHref}
             className={`nav-link block px-3 py-2 mb-1 text-xl font-bold text-center uppercase ${
-              isActive("/banking-privacy")
+              isActive("/banking-privacy") || isActive("/banking-privacy-login")
                 ? "text-[#d4af37] border-b-2 border-[#d4af37] mx-auto w-4/5"
                 : "text-[#d4af37]/90 hover:text-[#d4af37] mx-auto w-4/5 hover:border-b-2 hover:border-[#d4af37]/60"
             }`}
