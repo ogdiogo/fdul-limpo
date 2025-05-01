@@ -1,3 +1,4 @@
+import { UserCheck } from "lucide-react";
 import { Link } from "wouter"; // Import Link from wouter
 
 const BankingPrivacy = () => {
@@ -20,20 +21,17 @@ const BankingPrivacy = () => {
         {/* Conteúdo principal com texto corrido */}
         <div className="bg-white rounded-xl shadow-md p-8 border border-[#d4af37]/10">
           <div className="prose max-w-none text-[#081b33]/90">
-            {/* Content Section */}
             <p>
               Glosadores e Associados trata a sua privacidade e a segurança da sua informação financeira com extrema seriedade. Aderimos aos mais altos padrões de proteção de dados e leis de sigilo bancário para garantir que suas informações permaneçam confidenciais.
             </p>
+          </div>
 
-            {/* Link to Enquadramento page, use Link from wouter instead of <a> */}
-            <div className="text-center mt-8">
-              <Link 
-                href="/enquadramento" 
-                className="text-lg font-semibold text-[#081b33] hover:text-[#d4af37]"
-              >
-                Clica aqui para ler o Enquadramento Legal
-              </Link>
-            </div>
+          {/* Área de Cliente button */}
+          <div className="text-center mt-10">
+            <Link href="/login" className="inline-flex items-center gap-2 px-6 py-3 text-white bg-[#081b33] hover:bg-[#0f2a4c] rounded-full shadow-lg transition duration-200 text-lg font-semibold">
+              <UserCheck className="w-5 h-5" />
+              Área de Cliente
+            </Link>
           </div>
         </div>
       </div>
