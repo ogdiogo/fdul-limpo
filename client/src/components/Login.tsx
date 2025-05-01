@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { LogIn, Eye, EyeOff } from "lucide-react";
 
 const Login = () => {
@@ -18,6 +18,10 @@ const Login = () => {
       alert("Incorrect email or password");
     }
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <section className="py-12 flex items-center justify-center bg-[#f8f9fa] px-4">
