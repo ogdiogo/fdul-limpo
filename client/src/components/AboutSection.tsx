@@ -122,7 +122,7 @@ const AboutSection = () => {
                 <h3 className="text-2xl font-bold mb-2 text-[#081b33]">{member.name}</h3>
                 <p className="text-[#d4af37] font-medium mb-4">{member.title}</p>
                 {member.content.map((paragraph, index) => (
-                  <p key={index} className="text-[#081b33]/80 mb-4">
+                  <p key={index} className="text-[#081b33]/80 mb-4 text-justify">
                     {paragraph}
                   </p>
                 ))}
