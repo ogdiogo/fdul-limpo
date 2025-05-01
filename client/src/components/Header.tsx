@@ -15,22 +15,21 @@ const Header = () => {
 
         {/* Contact Us Section - Top Right */}
         <div className="flex justify-end py-3">
-          <div className="hidden md:flex items-center space-x-4">
-            <div className="text-right">
-              <h3 className="text-[#d4af37] text-lg font-bold uppercase tracking-wider">Contacte-nos</h3>
-              <div className="flex items-center mt-1 space-x-3">
-                <div className="flex items-center text-sm text-[#f5f5dc]">
-                  <Phone className="h-4 w-4 mr-1 text-[#d4af37]" />
-                  <span>(+351) 210 000 000</span>
-                </div>
-                <div className="flex items-center text-sm text-[#f5f5dc]">
-                  <Mail className="h-4 w-4 mr-1 text-[#d4af37]" />
-                  <span>glosadoresassociados@gmail.com</span>
-                </div>
-              </div>
+        <div className="hidden md:flex items-center space-x-6">
+          <h3 className="text-[#d4af37] text-lg font-bold uppercase tracking-wider mr-6">Contacte-nos</h3>
+          <div className="flex items-center space-x-6 text-sm text-[#f5f5dc]">
+            <div className="flex items-center">
+              <Phone className="h-4 w-4 mr-1 text-[#d4af37]" />
+              <span>(+351) 210 000 000</span>
+            </div>
+            <div className="flex items-center">
+              <Mail className="h-4 w-4 mr-1 text-[#d4af37]" />
+              <span>glosadoresassociados@gmail.com</span>
             </div>
           </div>
         </div>
+      </div>
+
 
         {/* Desktop Header: Logo + Navigation side-by-side */}
         <div className="hidden md:flex justify-between items-center py-4 border-t border-[#b8860b]/30">
