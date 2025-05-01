@@ -12,6 +12,7 @@ const Header = () => {
   return (
     <header className="bg-gradient-banking text-[#f5f5dc] shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         {/* Contact Us Section - Top Right */}
         <div className="flex justify-end py-3">
           <div className="hidden md:flex items-center space-x-4">
@@ -31,44 +32,48 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Logo - Left aligned */}
-        <div className="flex justify-start py-4">
+        {/* Desktop Header: Logo + Navigation side-by-side */}
+        <div className="hidden md:flex justify-between items-center py-4 border-t border-[#b8860b]/30">
+          {/* Logo */}
+          <div>
+            <img 
+              src="/images/logo21.png" 
+              alt="Logo" 
+              className="w-48 h-auto object-contain"
+            />
+          </div>
+
+          {/* Navigation Menu */}
+          <nav>
+            <div className="flex space-x-16 items-center">
+              <Link href="/" className={`nav-link text-base font-medium uppercase tracking-wider ${isActive('/') ? 'text-[#f5f5dc] font-semibold border-b border-[#f5f5dc]/80' : 'text-[#f5f5dc] hover:text-[#f5f5dc]/80'}`}>
+                Home
+              </Link>
+              <Link href="/banking-privacy" className={`nav-link text-2xl font-bold uppercase tracking-wider px-4 py-1 ${isActive('/banking-privacy') ? 'text-[#d4af37] border-b-2 border-[#d4af37]' : 'text-[#d4af37]/90 hover:text-[#d4af37] hover:border-b-2 hover:border-[#d4af37]/60'}`}>
+                Sigilo Bancário
+              </Link>
+              <Link href="/about" className={`nav-link text-base font-medium uppercase tracking-wider ${isActive('/about') ? 'text-[#f5f5dc] font-semibold border-b border-[#f5f5dc]/80' : 'text-[#f5f5dc] hover:text-[#f5f5dc]/80'}`}>
+                Sobre Nós
+              </Link>
+            </div>
+          </nav>
+        </div>
+
+        {/* Mobile menu button */}
+        <div className="md:hidden flex justify-between items-center py-3">
           <img 
             src="/images/logo21.png" 
             alt="Logo" 
-            className="w-56 h-56 object-contain"
+            className="w-40 h-auto object-contain"
           />
+          <button 
+            onClick={toggleMenu}
+            className="p-2 rounded-md text-[#f5f5dc] hover:text-[#d4af37] focus:outline-none"
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
-      </div>
-
-      {/* Desktop Navigation - Centered below logo */}
-      <nav className="hidden md:flex justify-center py-4 border-t border-[#b8860b]/30">
-        <div className="flex space-x-16 items-center">
-          <Link href="/" className={`nav-link text-base font-medium uppercase tracking-wider ${isActive('/') ? 'text-[#f5f5dc] font-semibold border-b border-[#f5f5dc]/80' : 'text-[#f5f5dc] hover:text-[#f5f5dc]/80'}`}>
-            Home
-          </Link>
-          <Link href="/banking-privacy" className={`nav-link text-2xl font-bold uppercase tracking-wider px-4 py-1 ${isActive('/banking-privacy') ? 'text-[#d4af37] border-b-2 border-[#d4af37]' : 'text-[#d4af37]/90 hover:text-[#d4af37] hover:border-b-2 hover:border-[#d4af37]/60'}`}>
-            Sigilo Bancário
-          </Link>
-          <Link href="/about" className={`nav-link text-base font-medium uppercase tracking-wider ${isActive('/about') ? 'text-[#f5f5dc] font-semibold border-b border-[#f5f5dc]/80' : 'text-[#f5f5dc] hover:text-[#f5f5dc]/80'}`}>
-            Sobre Nós
-          </Link>
-        </div>
-      </nav>
-
-      {/* Mobile menu button */}
-      <div className="md:hidden flex justify-end py-3 px-4">
-        <button 
-          onClick={toggleMenu}
-          className="p-2 rounded-md text-[#f5f5dc] hover:text-[#d4af37] focus:outline-none"
-          aria-label="Toggle menu"
-        >
-          {isMenuOpen ? (
-            <X className="h-6 w-6" />
-          ) : (
-            <Menu className="h-6 w-6" />
-          )}
-        </button>
       </div>
 
       {/* Mobile menu */}
