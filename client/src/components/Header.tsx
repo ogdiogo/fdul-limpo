@@ -42,7 +42,7 @@ const Header = () => {
             <div className="p-2 bg-gradient-to-b from-[#d4af37]/20 to-[#d4af37]/5 rounded-lg border-2 border-[#d4af37]/30 shadow-lg">
               <div className="p-1 border border-[#d4af37]/10">
                 <img 
-                  src="https://i.imgur.com/YjJtEwQh.jpg" 
+                  src="/images/logo2.jpeg" 
                   alt="Logo" 
                   className="w-56 h-56 object-contain"
                 />
