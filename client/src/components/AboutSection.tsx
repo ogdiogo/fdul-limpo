@@ -49,7 +49,7 @@ const teamMembers: TeamMember[] = [
       "Priscila Cunha coordena as nossas relações com instituições financeiras internacionais e clientes corporativos globais. Formada em Relações Internacionais pela Universidade Nova de Lisboa e com mestrado em Economia Internacional pela Sciences Po Paris.",
       "Com experiência prévia no Banco Mundial e em consultoria estratégica, a sua visão global e rede de contactos tem sido fundamental para a expansão internacional dos Glosadores e Associados."
     ],
-    image: "",
+    image: "/images/pcunha.jpeg",
     alt: "Priscila Cunha"
   },
   {

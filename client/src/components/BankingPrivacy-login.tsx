@@ -15,7 +15,7 @@ const BankingPrivacy = () => {
             <span className="block w-24 h-1 bg-[#d4af37] rounded-full mt-2"></span>
           </h2>
           <p className="mt-4 text-2xl font-semibold text-[#081b33]/90">
-            Bem-vinda, Prof. Regente Rute Saraiva
+            Bem-vinda, Sra. Prof. Regente Rute Saraiva
           </p>
         </div>
 
