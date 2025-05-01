@@ -1,20 +1,25 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Phone, Mail } from "lucide-react";
+import { Menu, X, Phone, Mail, LogOut } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [location] = useLocation();
+  const [location, setLocation] = useLocation();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const isActive = (path: string) => location === path;
 
   useEffect(() => {
-    // Update login state whenever the location changes
     const flag = localStorage.getItem("isLoggedIn");
     setIsLoggedIn(flag === "true");
   }, [location]);
+
+  const handleLogout = () => {
+    localStorage.removeItem("isLoggedIn");
+    setIsLoggedIn(false);
+    setLocation("/");
+  };
 
   const sigiloHref = isLoggedIn ? "/banking-privacy-login" : "/banking-privacy";
 
@@ -58,7 +63,7 @@ const Header = () => {
               <Link
                 href={sigiloHref}
                 className={`nav-link text-xl font-bold uppercase tracking-wider px-4 py-1 ${
-                  isActive("/banking-privacy") || isActive("/banking-privacy-login")
+                  isActive(sigiloHref)
                     ? "text-[#d4af37] border-b-2 border-[#d4af37]"
                     : "text-[#d4af37]/90 hover:text-[#d4af37] hover:border-b-2 hover:border-[#d4af37]/60"
                 }`}
@@ -75,6 +80,15 @@ const Header = () => {
               >
                 Sobre Nós
               </Link>
+              {isLoggedIn && (
+                <button
+                  onClick={handleLogout}
+                  className="text-[#f5f5dc] hover:text-[#d4af37] font-semibold uppercase tracking-wider flex items-center space-x-2"
+                >
+                  <LogOut className="w-4 h-4 mr-1" />
+                  Logout
+                </button>
+              )}
             </div>
           </nav>
         </div>
@@ -113,7 +127,7 @@ const Header = () => {
           <Link
             href={sigiloHref}
             className={`nav-link block px-3 py-2 mb-1 text-xl font-bold text-center uppercase ${
-              isActive("/banking-privacy") || isActive("/banking-privacy-login")
+              isActive(sigiloHref)
                 ? "text-[#d4af37] border-b-2 border-[#d4af37] mx-auto w-4/5"
                 : "text-[#d4af37]/90 hover:text-[#d4af37] mx-auto w-4/5 hover:border-b-2 hover:border-[#d4af37]/60"
             }`}
@@ -132,6 +146,18 @@ const Header = () => {
           >
             Sobre Nós
           </Link>
+          {isLoggedIn && (
+            <button
+              onClick={() => {
+                handleLogout();
+                setIsMenuOpen(false);
+              }}
+              className="w-4/5 mx-auto text-center text-[#f5f5dc] hover:text-[#d4af37] font-semibold uppercase tracking-wider flex justify-center items-center space-x-2 border border-[#d4af37]/40 rounded py-2"
+            >
+              <LogOut className="w-4 h-4 mr-2" />
+              Logout
+            </button>
+          )}
 
           {/* Mobile Contact */}
           <div className="mt-4 pt-4 border-t border-[#b8860b]/30 text-center">
