@@ -12,12 +12,13 @@ const Header = () => {
   return (
     <header className="bg-gradient-banking text-[#f5f5dc] shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        {/* Contact Us Section - Top Right */}
+        {/* Contact Section */}
         <div className="flex justify-end py-2">
           <div className="hidden md:flex items-center space-x-6">
-            <h3 className="text-[#d4af37] text-sm font-bold uppercase tracking-wider mr-4">Contacte-nos</h3>
-            <div className="flex items-center space-x-4 text-xs text-[#f5f5dc]">
+            <h3 className="text-[#d4af37] text-lg font-bold uppercase tracking-wider mr-6">
+              Contacte-nos
+            </h3>
+            <div className="flex items-center space-x-6 text-sm text-[#f5f5dc]">
               <div className="flex items-center">
                 <Phone className="h-4 w-4 mr-1 text-[#d4af37]" />
                 <span>(+351) 210 000 000</span>
@@ -30,27 +31,39 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Desktop Header: Logo + Navigation side-by-side */}
+        {/* Desktop Header */}
         <div className="hidden md:flex justify-between items-center py-3 border-t border-[#b8860b]/30">
-          {/* Logo */}
-          <div>
-            <img 
-              src="/images/logo21.png" 
-              alt="Logo" 
-              className="w-40 h-auto object-contain"
-            />
-          </div>
-
-          {/* Navigation Menu */}
+          <img src="/images/logo21.png" alt="Logo" className="w-48 h-auto object-contain" />
           <nav>
-            <div className="flex space-x-12 items-center">
-              <Link href="/" className={`nav-link text-sm font-medium uppercase tracking-wider ${isActive('/') ? 'text-[#f5f5dc] font-semibold border-b border-[#f5f5dc]/80' : 'text-[#f5f5dc] hover:text-[#f5f5dc]/80'}`}>
+            <div className="flex space-x-16 items-center">
+              <Link
+                href="/"
+                className={`nav-link text-lg font-semibold uppercase tracking-wider ${
+                  isActive("/")
+                    ? "text-[#f5f5dc] border-b border-[#f5f5dc]/80"
+                    : "text-[#f5f5dc] hover:text-[#f5f5dc]/80"
+                }`}
+              >
                 Home
               </Link>
-              <Link href="/banking-privacy" className={`nav-link text-xl font-bold uppercase tracking-wider px-4 py-1 ${isActive('/banking-privacy') ? 'text-[#d4af37] border-b-2 border-[#d4af37]' : 'text-[#d4af37]/90 hover:text-[#d4af37] hover:border-b-2 hover:border-[#d4af37]/60'}`}>
+              <Link
+                href="/banking-privacy"
+                className={`nav-link text-xl font-bold uppercase tracking-wider px-4 py-1 ${
+                  isActive("/banking-privacy")
+                    ? "text-[#d4af37] border-b-2 border-[#d4af37]"
+                    : "text-[#d4af37]/90 hover:text-[#d4af37] hover:border-b-2 hover:border-[#d4af37]/60"
+                }`}
+              >
                 Sigilo Bancário
               </Link>
-              <Link href="/about" className={`nav-link text-sm font-medium uppercase tracking-wider ${isActive('/about') ? 'text-[#f5f5dc] font-semibold border-b border-[#f5f5dc]/80' : 'text-[#f5f5dc] hover:text-[#f5f5dc]/80'}`}>
+              <Link
+                href="/about"
+                className={`nav-link text-lg font-semibold uppercase tracking-wider ${
+                  isActive("/about")
+                    ? "text-[#f5f5dc] border-b border-[#f5f5dc]/80"
+                    : "text-[#f5f5dc] hover:text-[#f5f5dc]/80"
+                }`}
+              >
                 Sobre Nós
               </Link>
             </div>
@@ -59,12 +72,8 @@ const Header = () => {
 
         {/* Mobile menu button */}
         <div className="md:hidden flex justify-between items-center py-3">
-          <img 
-            src="/images/logo21.png" 
-            alt="Logo" 
-            className="w-36 h-auto object-contain"
-          />
-          <button 
+          <img src="/images/logo21.png" alt="Logo" className="w-40 h-auto object-contain" />
+          <button
             onClick={toggleMenu}
             className="p-2 rounded-md text-[#f5f5dc] hover:text-[#d4af37] focus:outline-none"
             aria-label="Toggle menu"
@@ -74,46 +83,52 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile menu */}
-      <div className={`md:hidden bg-[#113457] border-t border-[#b8860b]/30 ${isMenuOpen ? 'block' : 'hidden'}`}>
+      {/* Mobile Menu */}
+      <div
+        className={`md:hidden bg-[#113457] border-t border-[#b8860b]/30 ${
+          isMenuOpen ? "block" : "hidden"
+        }`}
+      >
         <div className="px-2 py-3 space-y-4">
-          <Link 
-            href="/" 
-            className={`nav-link block px-3 py-2 text-sm font-large text-center uppercase ${
-              isActive('/') 
-                ? 'text-[#f5f5dc] font-semibold border-b border-[#f5f5dc]/80 mx-auto w-4/5' 
-                : 'text-[#f5f5dc] hover:text-[#f5f5dc]/80 mx-auto w-4/5'
+          <Link
+            href="/"
+            className={`nav-link block px-3 py-2 text-lg font-semibold text-center uppercase ${
+              isActive("/")
+                ? "text-[#f5f5dc] border-b border-[#f5f5dc]/80 mx-auto w-4/5"
+                : "text-[#f5f5dc] hover:text-[#f5f5dc]/80 mx-auto w-4/5"
             }`}
             onClick={() => setIsMenuOpen(false)}
           >
             Home
           </Link>
-          <Link 
-            href="/banking-privacy" 
+          <Link
+            href="/banking-privacy"
             className={`nav-link block px-3 py-2 mb-1 text-xl font-bold text-center uppercase ${
-              isActive('/banking-privacy') 
-                ? 'text-[#d4af37] border-b-2 border-[#d4af37] mx-auto w-4/5' 
-                : 'text-[#d4af37]/90 hover:text-[#d4af37] mx-auto w-4/5 hover:border-b-2 hover:border-[#d4af37]/60'
+              isActive("/banking-privacy")
+                ? "text-[#d4af37] border-b-2 border-[#d4af37] mx-auto w-4/5"
+                : "text-[#d4af37]/90 hover:text-[#d4af37] mx-auto w-4/5 hover:border-b-2 hover:border-[#d4af37]/60"
             }`}
             onClick={() => setIsMenuOpen(false)}
           >
             Sigilo Bancário
           </Link>
-          <Link 
-            href="/about" 
-            className={`nav-link block px-3 py-2 text-sm font-large text-center uppercase ${
-              isActive('/about') 
-                ? 'text-[#f5f5dc] font-semibold border-b border-[#f5f5dc]/80 mx-auto w-4/5' 
-                : 'text-[#f5f5dc] hover:text-[#f5f5dc]/80 mx-auto w-4/5'
+          <Link
+            href="/about"
+            className={`nav-link block px-3 py-2 text-lg font-semibold text-center uppercase ${
+              isActive("/about")
+                ? "text-[#f5f5dc] border-b border-[#f5f5dc]/80 mx-auto w-4/5"
+                : "text-[#f5f5dc] hover:text-[#f5f5dc]/80 mx-auto w-4/5"
             }`}
             onClick={() => setIsMenuOpen(false)}
           >
             Sobre Nós
           </Link>
 
-          {/* Contact mobile */}
+          {/* Mobile Contact */}
           <div className="mt-4 pt-4 border-t border-[#b8860b]/30 text-center">
-            <h4 className="text-[#d4af37] text-lg font-bold uppercase tracking-wider mb-2">Contacte-nos</h4>
+            <h4 className="text-[#d4af37] text-lg font-bold uppercase tracking-wider mb-2">
+              Contacte-nos
+            </h4>
             <div className="flex flex-col items-center space-y-2">
               <div className="flex items-center text-sm text-[#f5f5dc]">
                 <Phone className="h-4 w-4 mr-1 text-[#d4af37]" />
