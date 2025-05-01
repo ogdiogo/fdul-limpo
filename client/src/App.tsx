@@ -7,6 +7,7 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import About from "@/pages/About";
 import BankingPrivacy from "@/pages/BankingPrivacy";
+import Enquadramento from "@/pages/Enquadramento"; // Import the Enquadramento page
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Notification from "@/components/Notification";
@@ -16,9 +17,10 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/banking-privacy" component={BankingPrivacy} />
-      <Route component={NotFound} />
+            <Route path="/about" component={About} />
+            <Route path="/banking-privacy" component={BankingPrivacy} />
+            <Route path="/enquadramento" component={Enquadramento} /> {/* Add this line for Enquadramento */}
+            <Route component={NotFound} />
     </Switch>
   );
 }
