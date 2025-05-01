@@ -1,3 +1,5 @@
+import { Link } from "wouter"; // Import Link from wouter
+
 const BankingPrivacy = () => {
   return (
     <section id="privacy" className="py-12 bg-[#f8f9fa]">
@@ -23,14 +25,14 @@ const BankingPrivacy = () => {
               Glosadores e Associados trata a sua privacidade e a segurança da sua informação financeira com extrema seriedade. Aderimos aos mais altos padrões de proteção de dados e leis de sigilo bancário para garantir que suas informações permaneçam confidenciais.
             </p>
 
-            {/* Link to Enquadramento page */}
+            {/* Link to Enquadramento page, use Link from wouter instead of <a> */}
             <div className="text-center mt-8">
-              <a 
+              <Link 
                 href="/enquadramento" 
                 className="text-lg font-semibold text-[#081b33] hover:text-[#d4af37]"
               >
                 Clica aqui para ler o Enquadramento Legal
-              </a>
+              </Link>
             </div>
           </div>
         </div>
