@@ -11,6 +11,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Notification from "@/components/Notification";
 import { useState, useEffect } from "react";
+import Enquadramento from "./components/Enquadramento";
 
 function Router() {
   return (
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/banking-privacy" component={BankingPrivacy} />
+      <Route path="/enquadramento" component={Enquadramento}/>
       <Route component={NotFound} />
     </Switch>
   );
