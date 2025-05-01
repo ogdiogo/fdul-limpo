@@ -1,16 +1,16 @@
 import { useState, useEffect, useRef } from "react";
-import { LogIn } from "lucide-react";
+import { LogIn, Eye, EyeOff } from "lucide-react"; // Import Eye and EyeOff icons
 
 const Login = () => {
   const [email, setEmail] = useState("prof.regente.rutesaraiva@fd.ulisboa.pt");
   const [password, setPassword] = useState("direitodosmercadosfinanceiros");
+  const [passwordVisible, setPasswordVisible] = useState(false); // State to toggle password visibility
   const loginRef = useRef<HTMLDivElement | null>(null);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email === "prof.regente.rutesaraiva@fd.ulisboa.pt" && password === "direitodosmercadosfinanceiros") {
       console.log("Login successful!");
-      alert("Login successful!");
     } else {
       console.log("Incorrect credentials");
       alert("Incorrect email or password");
@@ -47,16 +47,23 @@ const Login = () => {
               className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-[#d4af37] focus:border-[#d4af37] py-2 px-3 text-sm"
             />
           </div>
-          <div>
+          <div className="relative">
             <label htmlFor="password" className="block text-sm font-medium text-[#081b33]">Palavra-passe</label>
             <input
               id="password"
-              type="password"
+              type={passwordVisible ? "text" : "password"} // Toggle between password and text type
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-[#d4af37] focus:border-[#d4af37] py-2 px-3 text-sm"
             />
+            <button
+              type="button"
+              onClick={() => setPasswordVisible(!passwordVisible)} // Toggle visibility
+              className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#6b7280] hover:text-[#d4af37] focus:outline-none"
+            >
+              {passwordVisible ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
+            </button>
           </div>
           <button
             type="submit"
