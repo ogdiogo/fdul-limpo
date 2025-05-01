@@ -1,13 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Phone, Mail } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [location] = useLocation();
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Add state to track login status
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const isActive = (path: string) => location === path;
+
+  useEffect(() => {
+    const flag = localStorage.getItem("isLoggedIn");
+    setIsLoggedIn(flag === "true");
+  }, []);
 
   return (
     <header className="bg-gradient-banking text-[#f5f5dc] shadow-md">
@@ -47,7 +53,7 @@ const Header = () => {
                 Home
               </Link>
               <Link
-                href="/banking-privacy"
+                href={isLoggedIn ? "/banking-privacy-login" : "/banking-privacy"} // Update the href dynamically
                 className={`nav-link text-xl font-bold uppercase tracking-wider px-4 py-1 ${
                   isActive("/banking-privacy")
                     ? "text-[#d4af37] border-b-2 border-[#d4af37]"
@@ -102,7 +108,7 @@ const Header = () => {
             Home
           </Link>
           <Link
-            href="/banking-privacy"
+            href={isLoggedIn ? "/banking-privacy-login" : "/banking-privacy"} // Update the href dynamically for mobile menu
             className={`nav-link block px-3 py-2 mb-1 text-xl font-bold text-center uppercase ${
               isActive("/banking-privacy")
                 ? "text-[#d4af37] border-b-2 border-[#d4af37] mx-auto w-4/5"

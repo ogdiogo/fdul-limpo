@@ -15,8 +15,10 @@ const Login = () => {
       password === "direitodosmercadosfinanceiros"
     ) {
       console.log("Login successful!");
-      navigate("/banking-privacy-login"); // Redirect on success
-    } else {
+      localStorage.setItem("isLoggedIn", "true");
+      navigate("/banking-privacy-login");
+    }
+     else {
       console.log("Incorrect credentials");
       alert("Incorrect email or password");
     }
