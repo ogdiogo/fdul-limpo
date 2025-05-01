@@ -11,7 +11,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Notification from "@/components/Notification";
 import { useState, useEffect } from "react";
-import Enquadramento from "./components/Enquadramento";
+import Enquadramento from "@/pages/Enquadramento";
 
 function Router() {
   return (
