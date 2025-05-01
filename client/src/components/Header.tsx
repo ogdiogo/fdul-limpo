@@ -14,44 +14,43 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Contact Us Section - Top Right */}
-        <div className="flex justify-end py-3">
-        <div className="hidden md:flex items-center space-x-6">
-          <h3 className="text-[#d4af37] text-lg font-bold uppercase tracking-wider mr-6">Contacte-nos</h3>
-          <div className="flex items-center space-x-6 text-sm text-[#f5f5dc]">
-            <div className="flex items-center">
-              <Phone className="h-4 w-4 mr-1 text-[#d4af37]" />
-              <span>(+351) 210 000 000</span>
-            </div>
-            <div className="flex items-center">
-              <Mail className="h-4 w-4 mr-1 text-[#d4af37]" />
-              <span>glosadoresassociados@gmail.com</span>
+        <div className="flex justify-end py-2">
+          <div className="hidden md:flex items-center space-x-6">
+            <h3 className="text-[#d4af37] text-sm font-bold uppercase tracking-wider mr-4">Contacte-nos</h3>
+            <div className="flex items-center space-x-4 text-xs text-[#f5f5dc]">
+              <div className="flex items-center">
+                <Phone className="h-4 w-4 mr-1 text-[#d4af37]" />
+                <span>(+351) 210 000 000</span>
+              </div>
+              <div className="flex items-center">
+                <Mail className="h-4 w-4 mr-1 text-[#d4af37]" />
+                <span>glosadoresassociados@gmail.com</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
 
         {/* Desktop Header: Logo + Navigation side-by-side */}
-        <div className="hidden md:flex justify-between items-center py-4 border-t border-[#b8860b]/30">
+        <div className="hidden md:flex justify-between items-center py-3 border-t border-[#b8860b]/30">
           {/* Logo */}
           <div>
             <img 
               src="/images/logo21.png" 
               alt="Logo" 
-              className="w-48 h-auto object-contain"
+              className="w-40 h-auto object-contain"
             />
           </div>
 
           {/* Navigation Menu */}
           <nav>
-            <div className="flex space-x-16 items-center">
-              <Link href="/" className={`nav-link text-base font-medium uppercase tracking-wider ${isActive('/') ? 'text-[#f5f5dc] font-semibold border-b border-[#f5f5dc]/80' : 'text-[#f5f5dc] hover:text-[#f5f5dc]/80'}`}>
+            <div className="flex space-x-12 items-center">
+              <Link href="/" className={`nav-link text-sm font-medium uppercase tracking-wider ${isActive('/') ? 'text-[#f5f5dc] font-semibold border-b border-[#f5f5dc]/80' : 'text-[#f5f5dc] hover:text-[#f5f5dc]/80'}`}>
                 Home
               </Link>
-              <Link href="/banking-privacy" className={`nav-link text-2xl font-bold uppercase tracking-wider px-4 py-1 ${isActive('/banking-privacy') ? 'text-[#d4af37] border-b-2 border-[#d4af37]' : 'text-[#d4af37]/90 hover:text-[#d4af37] hover:border-b-2 hover:border-[#d4af37]/60'}`}>
+              <Link href="/banking-privacy" className={`nav-link text-xl font-bold uppercase tracking-wider px-4 py-1 ${isActive('/banking-privacy') ? 'text-[#d4af37] border-b-2 border-[#d4af37]' : 'text-[#d4af37]/90 hover:text-[#d4af37] hover:border-b-2 hover:border-[#d4af37]/60'}`}>
                 Sigilo Bancário
               </Link>
-              <Link href="/about" className={`nav-link text-base font-medium uppercase tracking-wider ${isActive('/about') ? 'text-[#f5f5dc] font-semibold border-b border-[#f5f5dc]/80' : 'text-[#f5f5dc] hover:text-[#f5f5dc]/80'}`}>
+              <Link href="/about" className={`nav-link text-sm font-medium uppercase tracking-wider ${isActive('/about') ? 'text-[#f5f5dc] font-semibold border-b border-[#f5f5dc]/80' : 'text-[#f5f5dc] hover:text-[#f5f5dc]/80'}`}>
                 Sobre Nós
               </Link>
             </div>
@@ -63,7 +62,7 @@ const Header = () => {
           <img 
             src="/images/logo21.png" 
             alt="Logo" 
-            className="w-40 h-auto object-contain"
+            className="w-36 h-auto object-contain"
           />
           <button 
             onClick={toggleMenu}
@@ -80,7 +79,7 @@ const Header = () => {
         <div className="px-2 py-3 space-y-4">
           <Link 
             href="/" 
-            className={`nav-link block px-3 py-2 text-base font-medium text-center uppercase ${
+            className={`nav-link block px-3 py-2 text-sm font-medium text-center uppercase ${
               isActive('/') 
                 ? 'text-[#f5f5dc] font-semibold border-b border-[#f5f5dc]/80 mx-auto w-4/5' 
                 : 'text-[#f5f5dc] hover:text-[#f5f5dc]/80 mx-auto w-4/5'
@@ -91,7 +90,7 @@ const Header = () => {
           </Link>
           <Link 
             href="/banking-privacy" 
-            className={`nav-link block px-3 py-2 mb-1 text-2xl font-bold text-center uppercase ${
+            className={`nav-link block px-3 py-2 mb-1 text-xl font-bold text-center uppercase ${
               isActive('/banking-privacy') 
                 ? 'text-[#d4af37] border-b-2 border-[#d4af37] mx-auto w-4/5' 
                 : 'text-[#d4af37]/90 hover:text-[#d4af37] mx-auto w-4/5 hover:border-b-2 hover:border-[#d4af37]/60'
@@ -102,7 +101,7 @@ const Header = () => {
           </Link>
           <Link 
             href="/about" 
-            className={`nav-link block px-3 py-2 text-base font-medium text-center uppercase ${
+            className={`nav-link block px-3 py-2 text-sm font-medium text-center uppercase ${
               isActive('/about') 
                 ? 'text-[#f5f5dc] font-semibold border-b border-[#f5f5dc]/80 mx-auto w-4/5' 
                 : 'text-[#f5f5dc] hover:text-[#f5f5dc]/80 mx-auto w-4/5'
