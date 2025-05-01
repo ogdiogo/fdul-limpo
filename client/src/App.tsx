@@ -7,6 +7,7 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import About from "@/pages/About";
 import BankingPrivacy from "@/pages/BankingPrivacy";
+import BankingPrivacyLogin from "@/pages/BankingPrivacy-login";
 import Enquadramento from "@/pages/Enquadramento";
 import Login from "@/pages/Login" // Import the Enquadramento page
 import Header from "@/components/Header";
@@ -20,6 +21,7 @@ function Router() {
       <Route path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/banking-privacy" component={BankingPrivacy} />
+            <Route path="/banking-privacy-login" component={BankingPrivacyLogin} />
             <Route path="/enquadramento" component={Enquadramento} /> {/* Add this line for Enquadramento */}
             <Route path="/login" component={Login} />
             <Route component={NotFound} />
