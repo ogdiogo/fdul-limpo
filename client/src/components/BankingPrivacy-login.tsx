@@ -7,11 +7,11 @@ const BankingPrivacy = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
         <div className="text-center mb-10">
-          <h2 className="text-5xl font-extrabold text-[#081b33] tracking-tight relative inline-block">
-            <span className="relative z-10">Sigilo Bancário</span>
-            <span className="block text-xl text-[#d4af37] mt-2 font-medium">O compromisso que o protege</span>
-            <span className="absolute left-0 bottom-0 w-full h-1 bg-[#d4af37] rounded-md mt-2"></span>
-          </h2>
+        <h2 className="text-5xl font-extrabold text-[#081b33] tracking-tight relative inline-block pb-4">
+          Sigilo Bancário
+          <span className="block text-lg text-[#d4af37] font-medium mt-1 italic">O compromisso que o protege</span>
+          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-[#d4af37] rounded-full transition-all duration-300"></span>
+        </h2>
         </div>
 
         {/* Main Content */}
@@ -32,7 +32,39 @@ const BankingPrivacy = () => {
                 href="/enquadramento"
                 className="text-lg font-medium text-[#081b33] hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
               >
-                Enquadramento Legal
+                Enquadramento
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/enquadramento"
+                className="text-lg font-medium text-[#081b33] hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
+              >
+                Integração
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/enquadramento"
+                className="text-lg font-medium text-[#081b33] hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
+              >
+                Supervisão
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/enquadramento"
+                className="text-lg font-medium text-[#081b33] hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
+              >
+                Responsabilidade
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/enquadramento"
+                className="text-lg font-medium text-[#081b33] hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
+              >
+                Bibliografia
               </Link>
             </li>
             {/* Add more list items here in the future */}
