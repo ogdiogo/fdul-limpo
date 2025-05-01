@@ -79,7 +79,7 @@ const Header = () => {
         <div className="px-2 py-3 space-y-4">
           <Link 
             href="/" 
-            className={`nav-link block px-3 py-2 text-sm font-medium text-center uppercase ${
+            className={`nav-link block px-3 py-2 text-sm font-large text-center uppercase ${
               isActive('/') 
                 ? 'text-[#f5f5dc] font-semibold border-b border-[#f5f5dc]/80 mx-auto w-4/5' 
                 : 'text-[#f5f5dc] hover:text-[#f5f5dc]/80 mx-auto w-4/5'
@@ -101,7 +101,7 @@ const Header = () => {
           </Link>
           <Link 
             href="/about" 
-            className={`nav-link block px-3 py-2 text-sm font-medium text-center uppercase ${
+            className={`nav-link block px-3 py-2 text-sm font-large text-center uppercase ${
               isActive('/about') 
                 ? 'text-[#f5f5dc] font-semibold border-b border-[#f5f5dc]/80 mx-auto w-4/5' 
                 : 'text-[#f5f5dc] hover:text-[#f5f5dc]/80 mx-auto w-4/5'
