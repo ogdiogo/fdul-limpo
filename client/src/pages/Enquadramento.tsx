@@ -1,9 +1,9 @@
 
 import React from "react";
 import { Helmet } from "react-helmet";  // Import Helmet for page metadata
-import EnquadramentoContent from "@/components/Enquadramento";  // Import the content component
+import EnquadramentoContent from "@/components/Enquadramento";
 
-const EnquadramentoPage = () => {
+const Enquadramento = () => {
   return (
     <div>
       {/* Use Helmet to define metadata */}
@@ -21,4 +21,4 @@ const EnquadramentoPage = () => {
   );
 };
 
-export default EnquadramentoPage;
+export default Enquadramento;
