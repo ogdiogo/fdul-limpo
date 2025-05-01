@@ -12,20 +12,20 @@ const Login = () => {
   };
 
   useEffect(() => {
-    // Trigger the animation when the component mounts
+    // Scroll the page to the login container smoothly
     if (loginRef.current) {
-      loginRef.current.classList.add("slide-in");
+      loginRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start", // Align to the top of the container
+      });
     }
-
-    // Scroll to top when the component is mounted
-    window.scrollTo(0, 0);
   }, []);
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-[#f8f9fa] px-4">
       <div
         ref={loginRef}
-        className="bg-white shadow-lg rounded-xl p-8 w-full max-w-md opacity-0"
+        className="bg-white shadow-lg rounded-xl p-8 w-full max-w-md transform translate-y-[100px] opacity-0"
       >
         <div className="text-center mb-6">
           <LogIn className="mx-auto text-[#081b33] w-10 h-10 mb-2" />
