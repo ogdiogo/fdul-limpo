@@ -1,15 +1,18 @@
 import { useState, useEffect, useRef } from "react";
-import { LogIn, Eye, EyeOff } from "lucide-react"; // Import Eye and EyeOff icons
+import { LogIn, Eye, EyeOff } from "lucide-react";
 
 const Login = () => {
   const [email, setEmail] = useState("prof.regente.rutesaraiva@fd.ulisboa.pt");
   const [password, setPassword] = useState("direitodosmercadosfinanceiros");
-  const [passwordVisible, setPasswordVisible] = useState(false); // State to toggle password visibility
+  const [passwordVisible, setPasswordVisible] = useState(false);
   const loginRef = useRef<HTMLDivElement | null>(null);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (email === "prof.regente.rutesaraiva@fd.ulisboa.pt" && password === "direitodosmercadosfinanceiros") {
+    if (
+      email === "prof.regente.rutesaraiva@fd.ulisboa.pt" &&
+      password === "direitodosmercadosfinanceiros"
+    ) {
       console.log("Login successful!");
     } else {
       console.log("Incorrect credentials");
@@ -25,7 +28,7 @@ const Login = () => {
   }, []);
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-[#f8f9fa] px-4">
+    <section className="py-12 flex items-center justify-center bg-[#f8f9fa] px-4">
       <div
         ref={loginRef}
         className="bg-white shadow-lg rounded-xl p-6 w-full max-w-sm transition-opacity opacity-0"
@@ -37,7 +40,9 @@ const Login = () => {
         </div>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-[#081b33]">Email</label>
+            <label htmlFor="email" className="block text-sm font-medium text-[#081b33]">
+              Email
+            </label>
             <input
               id="email"
               type="email"
@@ -48,10 +53,12 @@ const Login = () => {
             />
           </div>
           <div className="relative">
-            <label htmlFor="password" className="block text-sm font-medium text-[#081b33]">Palavra-passe</label>
+            <label htmlFor="password" className="block text-sm font-medium text-[#081b33]">
+              Palavra-passe
+            </label>
             <input
               id="password"
-              type={passwordVisible ? "text" : "password"} // Toggle between password and text type
+              type={passwordVisible ? "text" : "password"}
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -59,10 +66,14 @@ const Login = () => {
             />
             <button
               type="button"
-              onClick={() => setPasswordVisible(!passwordVisible)} // Toggle visibility
+              onClick={() => setPasswordVisible(!passwordVisible)}
               className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#6b7280] hover:text-[#d4af37] focus:outline-none"
             >
-              {passwordVisible ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
+              {passwordVisible ? (
+                <EyeOff className="w-5 h-5" />
+              ) : (
+                <Eye className="w-5 h-5" />
+              )}
             </button>
           </div>
           <button
