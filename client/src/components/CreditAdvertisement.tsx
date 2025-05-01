@@ -11,7 +11,7 @@ const CreditAdvertisement = () => {
                 <div className="relative">
                   <div className="p-1 bg-gradient-to-b from-[#d4af37]/20 to-[#d4af37]/5 rounded-lg border border-[#d4af37]/30 shadow-md">
                     <img 
-                      src="/images/og.jpg" 
+                      src="https://i.imgur.com/YjJtEwQh.jpg" 
                       alt="Logo Glosadores e Associados" 
                       className="w-28 h-28 object-contain"
                     />
