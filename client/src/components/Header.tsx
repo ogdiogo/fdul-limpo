@@ -39,16 +39,12 @@ const Header = () => {
      {/* Logo centered */}
         <div className="flex justify-center py-8">
           <div className="relative">
-            <div className="p-2 rounded-lg border border-gray-300">
-              <div className="p-1 border border-gray-200">
                 <img 
                   src="/images/logo21.png" 
                   alt="Logo" 
                   className="w-56 h-56 object-contain"
                 />
               </div>
-            </div>
-          </div>
         </div>
         
         {/* Desktop Navigation - Centered below logo */}
