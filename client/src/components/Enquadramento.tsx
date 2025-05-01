@@ -1,6 +1,10 @@
 import { ShieldCheck, Gavel, BookText, UserCheck, AlertTriangle } from 'lucide-react';
+import { useEffect } from "react";
 
 const Enquadramento = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page on component mount
+  }, []);
   return (
     <section className="bg-[#f8f9fa] py-16 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
