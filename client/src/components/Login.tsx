@@ -21,9 +21,6 @@ const Login = () => {
   };
 
   useEffect(() => {
-    if (loginRef.current) {
-      loginRef.current.classList.add("slide-in");
-    }
     window.scrollTo(0, 0);
   }, []);
 
