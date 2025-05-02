@@ -16,7 +16,7 @@ const Supervisao = () => {
       </Helmet>
       
       {/* Include the EnquadramentoContent component */}
-      <SupervisaoContentContent />
+      <SupervisaoContent />
     </div>
   );
 };
