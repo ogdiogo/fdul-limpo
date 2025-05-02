@@ -2,6 +2,12 @@ import { UserCheck } from "lucide-react";
 import { Link } from "wouter";
 
 const BankingPrivacy = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  
   return (
     <section id="privacy" className="py-12 bg-[#f8f9fa] font-sans">     
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
