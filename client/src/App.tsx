@@ -1,5 +1,5 @@
 import { Switch, Route } from "wouter";
-import { queryClient } from "./lib/queryClient";
+import { queryClient } from "@/lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -14,6 +14,11 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Notification from "@/components/Notification";
 import { useState, useEffect } from "react";
+import Conclusao from "@/pages/Conclusao";
+import Supervisao from "@/pages/Supervisao";
+import Bibliografia from "@/pages/Bibliografia";
+import Enquadramento from "@/pages/Enquadramento";
+import Integracao from "@/pages/Integracao";
 
 function Router() {
   return (
