@@ -15,8 +15,8 @@ const teamMembers: TeamMember[] = [
   {
     id: 1,
     name: "Beatriz Abrantes",
-    number: "nº64644", 
-    subturma: "Subturma 4",
+    number: "64644", 
+    subturma: "4",
     title: "Presidente & Fundadora",
     content: [
       "Beatriz Abrantes tem mais de 30 anos de experiência no setor financeiro internacional...",
@@ -28,8 +28,8 @@ const teamMembers: TeamMember[] = [
   {
     id: 2,
     name: "Gustavo Cordeiro",
-    number: "nº64538", 
-    subturma: "Subturma 5",
+    number: "64538", 
+    subturma: "5",
     title: "Diretor de Operações Financeiras",
     content: [
       "Gustavo Cordeiro juntou-se à equipa em 2010...",
@@ -42,7 +42,7 @@ const teamMembers: TeamMember[] = [
     id: 3,
     name: "Gabriel Asseiceiro",
     number: "nº66416", 
-    subturma: "Subturma 5",
+    subturma: "5",
     title: "Diretor de Investimentos",
     content: [
       "Gabriel Asseiceiro é responsável pela estratégia de investimentos do banco desde 2012...",
@@ -54,8 +54,8 @@ const teamMembers: TeamMember[] = [
   {
     id: 4,
     name: "Priscila Cunha",
-    number: "nº65997", 
-    subturma: "Subturma 4",
+    number: "65997", 
+    subturma: "4",
     title: "Diretora de Relações Internacionais",
     content: [
       "Priscila Cunha coordena as nossas relações com instituições financeiras internacionais...",
@@ -67,8 +67,8 @@ const teamMembers: TeamMember[] = [
   {
     id: 5,
     name: "Rodrigo Chaparro",
-    number: "nº66654", 
-    subturma: "Subturma 8",
+    number: "66654", 
+    subturma: "8",
     title: "Diretor de Inovação e Tecnologia",
     content: [
       "Rodrigo Chaparro lidera a nossa transformação digital e iniciativas de inovação bancária...",
