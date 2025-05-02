@@ -60,11 +60,6 @@ function App() {
             <Router />
           </main>
           <Footer />
-          {showNotification && (
-            <Notification 
-              onClose={() => setShowNotification(false)} 
-            />
-          )}
         </div>
         <Toaster />
       </TooltipProvider>
