@@ -8,8 +8,6 @@ const BankingPrivacy = () => {
       className="py-12 bg-cover bg-center font-sans"
       style={{ backgroundImage: "url('/images/bg.jpg')" }}
     >
-
-    <div className="absolute inset-0 bg-black opacity-20"></div>
  
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
