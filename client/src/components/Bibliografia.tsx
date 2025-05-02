@@ -1,7 +1,7 @@
 import { ShieldCheck, Gavel, BookText, UserCheck, AlertTriangle, Scale, Lock, Briefcase, Banknote } from 'lucide-react';
 import { useEffect } from "react";
 
-const Enquadramento = () => {
+const Bibliografia = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -108,4 +108,4 @@ const Enquadramento = () => {
   );
 };
 
-export default Enquadramento;
+export default Bibliografia;

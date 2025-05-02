@@ -8,7 +8,7 @@ import Home from "@/pages/Home";
 import About from "@/pages/About";
 import BankingPrivacy from "@/pages/BankingPrivacy";
 import BankingPrivacyLogin from "@/pages/BankingPrivacy-login";
-import Enquadramento from "@/pages/Enquadramento";
+import Responsabilidade from "@/pages/Responsabilidade";
 import Login from "@/pages/Login" // Import the Enquadramento page
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -22,7 +22,12 @@ function Router() {
             <Route path="/about" component={About} />
             <Route path="/banking-privacy" component={BankingPrivacy} />
             <Route path="/banking-privacy-login" component={BankingPrivacyLogin} />
-            <Route path="/enquadramento" component={Enquadramento} /> {/* Add this line for Enquadramento */}
+            <Route path="/enquadramento" component={Enquadramento} />
+            <Route path="/integracao" component={Integracao} />
+            <Route path="/supervisao" component={Supervisao} />
+            <Route path="/responsabilidade" component={Responsabilidade} />
+            <Route path="/conclusao" component={Conclusao} />
+            <Route path="/bibliografia" component={Bibliografia} />
             <Route path="/login" component={Login} />
             <Route component={NotFound} />
     </Switch>

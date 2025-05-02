@@ -42,7 +42,7 @@ const BankingPrivacy = () => {
             </li>
             <li>
               <Link
-                href="/integração"
+                href="/integracao"
                 className="text-lg font-medium text-[#081b33] hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
               >
                 Integração
@@ -50,7 +50,7 @@ const BankingPrivacy = () => {
             </li>
             <li>
               <Link
-                href="/supervisão"
+                href="/supervisao"
                 className="text-lg font-medium text-[#081b33] hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
               >
                 Supervisão
