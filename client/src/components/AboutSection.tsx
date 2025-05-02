@@ -19,8 +19,8 @@ const teamMembers: TeamMember[] = [
     subturma: "4",
     title: "Presidente & Fundadora",
     content: [
-      "Beatriz Abrantes tem mais de 30 anos de experiência no setor financeiro internacional...",
-      "Ocupou cargos de direção em diversas instituições bancárias na Europa e nos Estados Unidos..."
+      "Beatriz Abrantes tem mais de 30 anos de experiência no setor financeiro internacional. É formada em Economia pela Universidade de Lisboa e doutorada em Finanças pela London School of Economics.",
+      "Ocupou cargos de direção em diversas instituições bancárias na Europa e nos Estados Unidos, previamente à fundação de Glosadores e Associados em 2005. É reconhecida pela sua visão estratégica e compromisso com a excelência."
     ],
     image: "/images/og.jpg",
     alt: "Beatriz Abrantes"
@@ -32,8 +32,8 @@ const teamMembers: TeamMember[] = [
     subturma: "5",
     title: "Diretor de Operações Financeiras",
     content: [
-      "Gustavo Cordeiro juntou-se à equipa em 2010...",
-      "Desde que assumiu a chefia, implementámos sistemas financeiros inovadores..."
+      "Gustavo Cordeiro juntou-se à equipa em 2010, trazendo consigo uma vasta experiência em operações bancárias e gestão de riscos. É formado em Gestão pelo ISCTE com MBA pelo INSEAD.",
+      "Desde que assumiu a chefia, implementámos sistemas financeiros inovadores que melhoraram significativamente a segurança e eficiência das nossas operações, estando sempre focados na satisfação dos nossos clientes."
     ],
     image: "",
     alt: "Gustavo Cordeiro"
@@ -45,8 +45,8 @@ const teamMembers: TeamMember[] = [
     subturma: "5",
     title: "Diretor de Investimentos",
     content: [
-      "Gabriel Asseiceiro é responsável pela estratégia de investimentos do banco desde 2012...",
-      "A sua análise criteriosa e abordagem equilibrada no que respeita ao risco vs retorno..."
+      "Gabriel Asseiceiro é responsável pela estratégia de investimentos do banco desde 2012. É formado em Matemática Aplicada pela Universidade do Porto com especialização em Mercados Financeiros pela Universidade de Chicago.",
+      "A sua análise criteriosa e abordagem equilibrada no que respeita ao risco vs retorno, tem permitido oferecer aos nossos clientes oportunidades de investimento consistentes e de elevada qualidade, mesmo em períodos de volatilidade nos mercados."
     ],
     image: "",
     alt: "Gabriel Asseiceiro"
@@ -58,8 +58,8 @@ const teamMembers: TeamMember[] = [
     subturma: "4",
     title: "Diretora de Relações Internacionais",
     content: [
-      "Priscila Cunha coordena as nossas relações com instituições financeiras internacionais...",
-      "Com experiência prévia no Banco Mundial e em consultoria estratégica..."
+      "Priscila Cunha coordena as nossas relações com instituições financeiras internacionais e clientes corporativos globais. É formada em Relações Internacionais pela Universidade Nova de Lisboa com mestrado em Economia Internacional pela Sciences Po Paris.",
+      "Com experiência prévia no Banco Mundial e em consultoria estratégica, a sua visão global e rede de contactos tem sido fundamental para a expansão internacional dos Glosadores e Associados."
     ],
     image: "/images/pcunha.jpeg",
     alt: "Priscila Cunha"
@@ -71,8 +71,8 @@ const teamMembers: TeamMember[] = [
     subturma: "8",
     title: "Diretor de Inovação e Tecnologia",
     content: [
-      "Rodrigo Chaparro lidera a nossa transformação digital e iniciativas de inovação bancária...",
-      "A sua experiência em fintech e banca digital tem sido essencial para desenvolver soluções tecnológicas..."
+      "Rodrigo Chaparro lidera a nossa transformação digital e iniciativas de inovação bancária. É formado em Engenharia Informática pelo Instituto Superior Técnico e com MBA pelo MIT.",
+      "A sua experiência em fintech e banca digital tem sido essencial para desenvolver soluções tecnológicas seguras que mantêm os Glosadores e Associados na vanguarda do sector bancário, combinando tradição com inovação responsável."
     ],
     image: "",
     alt: "Rodrigo Chaparro"
@@ -81,7 +81,7 @@ const teamMembers: TeamMember[] = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-12 bg-gradient-to-b from-[#f8f9fa] to-[#f1f2f3]">
+    <section id="about" className="py-12 bg-gradient-to-b from-[#f8f9fa] to-[#f1f2f3] font-avenir">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-[#081b33]">Sobre Nós</h2>
