@@ -23,6 +23,7 @@ const BankingPrivacy = () => {
           <div className="prose max-w-none text-[#081b33]/90">
             <p>
             Na Glosadores e Associados, a confiança dos nossos clientes é o ativo mais valioso. Esta relação de confiança tem como alicerce um princípio fundamental: o Sigilo Bancário.            </p>
+            <p> Para aceder aos recursos disponíveis, por favor aceda à sua área de cliente.</p>          
           </div>
 
           {/* Área de Cliente button */}

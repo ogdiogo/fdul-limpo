@@ -41,7 +41,7 @@ const teamMembers: TeamMember[] = [
   {
     id: 3,
     name: "Gabriel Asseiceiro",
-    number: "nº66416", 
+    number: "66416", 
     subturma: "5",
     title: "Diretor de Investimentos",
     content: [
