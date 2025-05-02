@@ -12,11 +12,11 @@ const Advertisement = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-[#f5f5dc]">
-                Nova Coleção de The Tote Bag Marc Jacobs
+                Nova coleção de "The Tote Bag" Marc Jacobs
               </h3>
               <p className="text-[#f5f5dc]/90 mb-6">
                 Descubra o equilíbrio perfeito entre estilo e funcionalidade com a nova 
-                coleção de Tote Bags da Marc Jacobs. Elegante, espaçosa e ideal para 
+                coleção de "The Tote Bag" da Marc Jacobs. Elegante, espaçosa e ideal para 
                 o dia a dia ou ocasiões especiais.
               </p>
               <div className="space-y-3">
@@ -49,7 +49,7 @@ const Advertisement = () => {
                     <div className="text-center px-4">
                       <p className="text-[#d4af37] text-2xl font-bold">€ 399</p>
                       <p className="text-[#f5f5dc] text-sm font-medium">
-                        Luxo e praticidade em uma peça exclusiva
+                        Luxo e praticidade numa única peça
                       </p>
                     </div>
                   </div>

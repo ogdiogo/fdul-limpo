@@ -21,8 +21,8 @@ const BankingPrivacy = () => {
         {/* Conteúdo principal com texto corrido */}
         <div className="bg-white rounded-xl shadow-md p-8 border border-[#d4af37]/10">
           <div className="prose max-w-none text-[#081b33]/90">
-            <p>
-            Na Glosadores e Associados, a confiança dos nossos clientes é o ativo mais valioso. Esta relação de confiança tem como alicerce um princípio fundamental: o Sigilo Bancário.            </p>
+            <p>Glosadores e Associados trata da sua privacidade e da sua informação financeira com segurança e seriedade. 
+              Aderimos aos mais altos padrões de proteção de dados e leis de sigilo bancário para garantir que as suas informações permaneçam confidenciais.</p>            
             <p> Para aceder aos recursos disponíveis, por favor aceda à sua área de cliente.</p>          
           </div>
 

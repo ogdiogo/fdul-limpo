@@ -3,8 +3,8 @@ import { Link } from "wouter";
 
 const BankingPrivacy = () => {
   return (
-    <section id="privacy" className="py-12 bg-[#f8f9fa]">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="privacy" className="py-12 bg-[#f8f9fa] font-sans">     
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
         <div className="text-left mb-8">
           <h2 className="text-5xl font-extrabold text-[#081b33] tracking-tight relative pb-4">
@@ -23,7 +23,7 @@ const BankingPrivacy = () => {
         <div className="bg-white rounded-xl shadow-md p-8 border border-[#d4af37]/10">
           <div className="prose max-w-none text-[#081b33]/90">
             <p>
-              Glosadores e Associados trata a sua privacidade e a segurança da sua informação financeira com extrema seriedade. Aderimos aos mais altos padrões de proteção de dados e leis de sigilo bancário para garantir que suas informações permaneçam confidenciais.
+            Na Glosadores e Associados, a confiança dos nossos clientes é o ativo mais valioso. Esta relação de confiança tem como alicerce um princípio fundamental: o Sigilo Bancário. 
             </p>
           </div>
         </div>
@@ -42,7 +42,7 @@ const BankingPrivacy = () => {
             </li>
             <li>
               <Link
-                href="/enquadramento"
+                href="/integração"
                 className="text-lg font-medium text-[#081b33] hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
               >
                 Integração
@@ -50,7 +50,7 @@ const BankingPrivacy = () => {
             </li>
             <li>
               <Link
-                href="/enquadramento"
+                href="/supervisão"
                 className="text-lg font-medium text-[#081b33] hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
               >
                 Supervisão
@@ -58,7 +58,7 @@ const BankingPrivacy = () => {
             </li>
             <li>
               <Link
-                href="/enquadramento"
+                href="/responsabilidade"
                 className="text-lg font-medium text-[#081b33] hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
               >
                 Responsabilidade
@@ -66,7 +66,15 @@ const BankingPrivacy = () => {
             </li>
             <li>
               <Link
-                href="/enquadramento"
+                href="/conclusao"
+                className="text-lg font-medium text-[#081b33] hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
+              >
+                Conclusão
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/bibliografia"
                 className="text-lg font-medium text-[#081b33] hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
               >
                 Bibliografia
