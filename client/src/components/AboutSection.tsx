@@ -77,6 +77,85 @@ const teamMembers: TeamMember[] = [
   }
 ];
 
+interface TeamMember {
+  id: number;
+  name: string;
+  title: string;
+  content: string[];
+  image: string;
+  alt: string;
+  number: string; // Added the number
+  subturma: string; // Added the subturma
+}
+
+const teamMembers: TeamMember[] = [
+  {
+    id: 1,
+    name: "Beatriz Abrantes",
+    title: "Presidente & Fundadora",
+    content: [
+      "Beatriz Abrantes tem mais de 30 anos de experiência no setor financeiro internacional. É formada em Economia pela Universidade de Lisboa e doutorada em Finanças pela London School of Economics.",
+      "Ocupou cargos de direção em diversas instituições bancárias na Europa e nos Estados Unidos, previamente à fundação de Glosadores e Associados em 2005. É reconhecida pela sua visão estratégica e compromisso com a excelência."
+    ],
+    image: "/images/og.jpg",
+    alt: "Beatriz Abrantes",
+    number: "64644", // Added number
+    subturma: "4" // Added subturma
+  },
+  {
+    id: 2,
+    name: "Gustavo Cordeiro",
+    title: "Diretor de Operações Financeiras",
+    content: [
+      "Gustavo Cordeiro juntou-se à equipa em 2010, trazendo consigo uma vasta experiência em operações bancárias e gestão de riscos. É formado em Gestão pelo ISCTE com MBA pelo INSEAD.",
+      "Desde que assumiu a chefia, implementámos sistemas financeiros inovadores que melhoraram significativamente a segurança e eficiência das nossas operações, estando sempre focados na satisfação dos nossos clientes."
+    ],
+    image: "",
+    alt: "Gustavo Cordeiro",
+    number: "64538", // Added number
+    subturma: "5" // Added subturma
+  },
+  {
+    id: 3,
+    name: "Gabriel Asseiceiro",
+    title: "Diretor de Investimentos",
+    content: [
+      "Gabriel Asseiceiro é responsável pela estratégia de investimentos do banco desde 2012. É formado em Matemática Aplicada pela Universidade do Porto com especialização em Mercados Financeiros pela Universidade de Chicago.",
+      "A sua análise criteriosa e abordagem equilibrada no que respeita ao risco vs retorno, tem permitido oferecer aos nossos clientes oportunidades de investimento consistentes e de elevada qualidade, mesmo em períodos de volatilidade nos mercados."
+    ],
+    image: "",
+    alt: "Gabriel Asseiceiro",
+    number: "66416", // Added number
+    subturma: "5" // Added subturma
+  },
+  {
+    id: 4,
+    name: "Priscila Cunha",
+    title: "Diretora de Relações Internacionais",
+    content: [
+      "Priscila Cunha coordena as nossas relações com instituições financeiras internacionais e clientes corporativos globais. É formada em Relações Internacionais pela Universidade Nova de Lisboa com mestrado em Economia Internacional pela Sciences Po Paris.",
+      "Com experiência prévia no Banco Mundial e em consultoria estratégica, a sua visão global e rede de contactos tem sido fundamental para a expansão internacional dos Glosadores e Associados."
+    ],
+    image: "/images/pcunha.jpeg",
+    alt: "Priscila Cunha",
+    number: "65997", // Added number
+    subturma: "4" // Added subturma
+  },
+  {
+    id: 5,
+    name: "Rodrigo Chaparro",
+    title: "Diretor de Inovação e Tecnologia",
+    content: [
+      "Rodrigo Chaparro lidera a nossa transformação digital e iniciativas de inovação bancária. É formado em Engenharia Informática pelo Instituto Superior Técnico e com MBA pelo MIT.",
+      "A sua experiência em fintech e banca digital tem sido essencial para desenvolver soluções tecnológicas seguras que mantêm os Glosadores e Associados na vanguarda do sector bancário, combinando tradição com inovação responsável."
+    ],
+    image: "",
+    alt: "Rodrigo Chaparro",
+    number: "66654", // Added number
+    subturma: "8" // Added subturma
+  }
+];
+
 const AboutSection = () => {
   return (
     <section id="about" className="py-12 bg-gradient-to-b from-[#f8f9fa] to-[#f1f2f3]">
@@ -132,7 +211,7 @@ const AboutSection = () => {
               {/* Texto sempre à direita */}
               <div className="md:w-1/2">
                 <h3 className="text-2xl font-bold mb-2 text-[#081b33]">{member.name}</h3>
-                <p className="text-[#081b33]/70 text-sm mb-4">{`nº ${member.id}, Subturma ${member.title.split(' ')[1]}`}</p>
+                <p className="text-[#081b33]/70 text-sm mb-4">{`nº ${member.number}, Subturma ${member.subturma}`}</p>
                 <p className="text-[#d4af37] font-medium mb-4">{member.title}</p>
                 {member.content.map((paragraph, index) => (
                   <p key={index} className="text-[#081b33]/80 mb-4 text-justify">
@@ -149,4 +228,5 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
+
 
