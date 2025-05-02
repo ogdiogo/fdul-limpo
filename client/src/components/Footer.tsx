@@ -59,28 +59,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
-          {/* Resources */}
-          <div>
-            <h3 className="font-bold text-lg mb-4">Recursos</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-[#f5f5dc]/70 hover:text-[#d4af37]">Blog</a>
-              </li>
-              <li>
-                <a href="#" className="text-[#f5f5dc]/70 hover:text-[#d4af37]">Central de Ajuda</a>
-              </li>
-              <li>
-                <a href="#" className="text-[#f5f5dc]/70 hover:text-[#d4af37]">Comunidade</a>
-              </li>
-              <li>
-                <a href="#" className="text-[#f5f5dc]/70 hover:text-[#d4af37]">Webinars</a>
-              </li>
-              <li>
-                <a href="#" className="text-[#f5f5dc]/70 hover:text-[#d4af37]">Parceiros</a>
-              </li>
-            </ul>
-          </div>
+        
           
           {/* Newsletter */}
           <div>

@@ -22,7 +22,7 @@ const Notification = ({ onClose }: NotificationProps) => {
     setIsVisible(false);
     setTimeout(() => {
       onClose();
-    }, 300);
+    }, 100);
   };
 
   const handleDismiss = () => {
@@ -40,14 +40,14 @@ const Notification = ({ onClose }: NotificationProps) => {
           <Bell className="h-6 w-6 text-accent" />
         </div>
         <div className="ml-3 w-0 flex-1">
-          <p className="font-medium text-gray-900">Time for your daily lesson!</p>
-          <p className="mt-1 text-sm text-gray-500">5 minutes of learning will keep your skills growing.</p>
+          <p className="font-medium text-gray-900">Compre uma mala "The Tote Bag" agora!</p>
+          <p className="mt-1 text-sm text-gray-500">Aproveite a promoção.</p>
           <div className="mt-2 flex space-x-3">
             <Button 
               className="bg-primary text-white text-sm px-3 py-1.5 rounded font-medium hover:bg-blue-600 transition"
               size="sm"
             >
-              Start Now
+              Ver oferta
             </Button>
             <Button 
               variant="outline"
@@ -55,7 +55,7 @@ const Notification = ({ onClose }: NotificationProps) => {
               size="sm"
               onClick={handleDismiss}
             >
-              Later
+              Esquecer
             </Button>
           </div>
         </div>
