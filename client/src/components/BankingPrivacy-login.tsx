@@ -3,12 +3,7 @@ import { Link } from "wouter";
 
 const BankingPrivacy = () => {
   return (
-    <section
-      id="privacy"
-      className="py-12 bg-cover bg-center font-sans"
-      style={{ backgroundImage: "url('/images/bg.jpg')" }}
-    >
- 
+    <section id="privacy" className="py-12 bg-[#f8f9fa] font-sans">     
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
         <div className="text-left mb-8">
