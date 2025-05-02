@@ -70,3 +70,5 @@ const CreditAdvertisement = () => {
     </section>
   );
 };
+
+export default CreditAdvertisement;
