@@ -105,6 +105,7 @@ const AboutSection = () => {
               key={member.id} 
               className="flex flex-col md:flex-row items-center gap-8 bg-white rounded-xl shadow-md p-6 border border-[#d4af37]/10"
             >
+              {/* Imagem sempre à esquerda */}
               <div className="md:w-1/2">
                 <div className="bg-[#081b33]/5 rounded-lg overflow-hidden shadow-md border border-[#d4af37]/20 h-[400px] flex items-center justify-center">
                   {member.image ? (
@@ -128,8 +129,10 @@ const AboutSection = () => {
                 </div>
               </div>
               
+              {/* Texto sempre à direita */}
               <div className="md:w-1/2">
-                <h3 className="text-2xl font-bold text-[#081b33] mb-1">{member.name}, <span className="text-base font-medium text-[#081b33]/70">{member.number}, {member.subturma}</span></h3>
+                <h3 className="text-2xl font-bold mb-2 text-[#081b33]">{member.name}</h3>
+                <p className="text-[#081b33]/70 text-sm mb-4">{`nº ${member.id}, Subturma ${member.title.split(' ')[1]}`}</p>
                 <p className="text-[#d4af37] font-medium mb-4">{member.title}</p>
                 {member.content.map((paragraph, index) => (
                   <p key={index} className="text-[#081b33]/80 mb-4 text-justify">
@@ -145,4 +148,3 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
