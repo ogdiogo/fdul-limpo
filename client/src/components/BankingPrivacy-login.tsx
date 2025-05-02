@@ -1,5 +1,7 @@
 import { UserCheck } from "lucide-react";
 import { Link } from "wouter";
+import { useEffect } from "react";
+
 
 const BankingPrivacy = () => {
 
