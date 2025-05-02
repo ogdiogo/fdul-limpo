@@ -66,7 +66,7 @@ const NewsSection = () => {
                   {item.date}
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-[#081b33]">{item.title}</h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">{item.description}</p>
+                <p className="text-gray-600 mb-4 leading-relaxed text-justify">{item.description}</p>
                 <a href="#" className="text-[#b8860b] font-medium hover:text-[#d4af37] inline-flex items-center font-avenir">
                   Leia mais
                   <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -48,7 +48,7 @@ const teamMembers: TeamMember[] = [
       "Gabriel Asseiceiro é responsável pela estratégia de investimentos do banco desde 2012. É formado em Matemática Aplicada pela Universidade do Porto com especialização em Mercados Financeiros pela Universidade de Chicago.",
       "A sua análise criteriosa e abordagem equilibrada no que respeita ao risco vs retorno, tem permitido oferecer aos nossos clientes oportunidades de investimento consistentes e de elevada qualidade, mesmo em períodos de volatilidade nos mercados."
     ],
-    image: "",
+    image: "/images/gasseiceiro.jpeg",
     alt: "Gabriel Asseiceiro"
   },
   {
@@ -85,7 +85,7 @@ const AboutSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-[#081b33]">Sobre Nós</h2>
-          <p className="mt-4 text-lg text-[#081b33]/70">Conheça mais sobre quem somos e nossa missão</p>
+          <p className="mt-4 text-lg text-[#081b33]/70">Conheça mais sobre quem somos e a nossa missão</p>
         </div>
         
         <div className="text-center mb-12">
