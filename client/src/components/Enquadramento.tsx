@@ -109,7 +109,7 @@ const Enquadramento = () => {
         <div className="mt-10 text-center">
           <Link
             href="/banking-privacy-login"
-            className="inline-block bg-[#081b33] text-white px-6 py-3 rounded-full shadow-md hover:bg-[#0b244a] transition"
+            className="inline-block bg-[#113457] text-white px-6 py-3 rounded-full shadow-md hover:bg-[#0b244a] transition"
           >
             Voltar
           </Link>
