@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
-const Advertisement = () => {
+const Advertisement = forwardRef<HTMLDivElement, {}>((props, ref) => {
   return (
-    <div className="max-w-5xl mx-auto my-12 px-4 sm:px-6 lg:px-8">
+    <div ref={ref} className="max-w-5xl mx-auto my-12 px-4 sm:px-6 lg:px-8" tabIndex={-1}>
       <div className="relative overflow-hidden rounded-xl shadow-lg border-2 border-[#d4af37]/30">
         <div className="bg-gradient-to-r from-[#113457] to-[#1a4878] p-6 sm:p-10">
           <div className="absolute top-0 right-0 px-3 py-1 bg-[#d4af37] text-[#113457] text-xs font-bold tracking-wider uppercase">
@@ -61,6 +61,6 @@ const Advertisement = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Advertisement;

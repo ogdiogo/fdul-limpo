@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Bell, X } from "lucide-react";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
 interface NotificationProps {
@@ -10,10 +10,8 @@ interface NotificationProps {
 const Notification = ({ onClose }: NotificationProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const router = useRouter();
-  const adRef = useRef<HTMLDivElement | null>(null);  // Ref to the ad section
 
   useEffect(() => {
-    // Small delay for animation
     const timeout = setTimeout(() => {
       setIsVisible(true);
     }, 100);
@@ -33,13 +31,10 @@ const Notification = ({ onClose }: NotificationProps) => {
   };
 
   const handleOfferClick = () => {
-    // Navigate to home page
+    // Navigate to home page and focus on the advertisement
     router.push("/").then(() => {
-      // After navigating, focus on the advertisement
-      if (adRef.current) {
-        adRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-        adRef.current.focus();  // Focus on the ad section
-      }
+      // Use window.scrollTo or a ref on the advertisement component to scroll to it
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     });
   };
 
@@ -54,13 +49,13 @@ const Notification = ({ onClose }: NotificationProps) => {
           <Bell className="h-6 w-6 text-accent" />
         </div>
         <div className="ml-3 w-0 flex-1">
-          <p className="font-medium text-gray-900">Nova coleção de malas "The Tote Bag"!</p>
-          <p className="mt-1 text-sm text-gray-500">Veja publicidade agora!</p>
+          <p className="font-medium text-gray-900">Compre uma mala "The Tote Bag" agora!</p>
+          <p className="mt-1 text-sm text-gray-500">Aproveite a promoção.</p>
           <div className="mt-2 flex space-x-3">
             <Button 
               className="bg-primary text-white text-sm px-3 py-1.5 rounded font-medium hover:bg-blue-600 transition"
               size="sm"
-              onClick={handleOfferClick} // Handle the "Ver oferta" click
+              onClick={handleOfferClick}
             >
               Ver oferta
             </Button>
