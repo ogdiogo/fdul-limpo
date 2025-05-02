@@ -1,7 +1,10 @@
 import { ShieldCheck, Gavel, BookText, UserCheck, AlertTriangle, Scale, Lock, Briefcase, Banknote } from 'lucide-react';
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Enquadramento = () => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -10,14 +13,16 @@ const Enquadramento = () => {
     <section className="bg-[#f8f9fa] py-16 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-[#081b33] text-center mb-12">
-        Responsabilidade
+          Responsabilidade
         </h2>
 
         {/* Art. 84.º RGICSF e Código Penal */}
         <div className="bg-white rounded-xl shadow-md p-8 border-l-4 border-[#d4af37] mb-10">
           <div className="flex items-center gap-3 mb-4">
             <ShieldCheck className="text-[#d4af37]" />
-            <h3 className="text-2xl font-semibold text-[#081b33]">Art. 84.º RGICSF - Violação do Dever de Sigilo Bancário</h3>
+            <h3 className="text-2xl font-semibold text-[#081b33]">
+              Art. 84.º RGICSF - Violação do Dever de Sigilo Bancário
+            </h3>
           </div>
           <p className="text-[#081b33]/90 text-justify">
             Do art. 84.º RGICSF, é possível extrair que a violação do dever de segredo bancário e de supervisão é punível nos termos do Código Penal, sem prejuízo de outras sanções aplicáveis. Eventual violação do dever de segredo traduz-se, destarte, num ato ilícito, violador de um bem jurídico com dignidade penal no nosso ordenamento jurídico.
@@ -103,6 +108,15 @@ const Enquadramento = () => {
         <p className="text-sm text-center text-[#6b7280] mt-12">
           Última atualização: 1 de maio de 2025
         </p>
+
+        <div className="flex justify-center mt-8">
+          <button
+            onClick={() => navigate("/banking-privacy-login")}
+            className="px-6 py-2 rounded-lg bg-[#113457] text-white font-semibold hover:bg-[#1a4878] transition"
+          >
+            Voltar
+          </button>
+        </div>
       </div>
     </section>
   );
