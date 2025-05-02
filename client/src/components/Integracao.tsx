@@ -15,7 +15,7 @@ const Integracao = () => {
     <section className="bg-[#f8f9fa] py-16 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-[#081b33] text-center mb-12">
-          Sigilo Bancário
+          Integração
         </h2>
 
         {/* Direito Penal e Processual Penal */}
