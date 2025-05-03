@@ -134,7 +134,7 @@ const AboutSection = () => {
               {/* Texto sempre à direita */}
               <div className="md:w-1/2">
                 <h3 className="text-2xl font-bold mb-2 text-[#081b33]">{member.name}</h3>
-                <p className="text-[#081b33]/70 text-sm mb-4">{`nº ${member.number}, Subturma ${member.subturma}`}</p>
+                <p className="text-[#081b33]/70 text-sm mb-4">{`Nº ${member.number}, Subturma ${member.subturma}`}</p>
                 <p className="text-[#d4af37] font-medium mb-4">{member.title}</p>
                 {member.content.map((paragraph, index) => (
                   <p key={index} className="text-[#081b33]/80 mb-4 text-justify">
