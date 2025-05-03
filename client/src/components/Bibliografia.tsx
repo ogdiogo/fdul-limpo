@@ -1,4 +1,4 @@
-import { ArrowLeft } from 'lucide-react';
+import { Book } from 'lucide-react';
 import { useEffect } from 'react';
 import { Link } from 'wouter';
 
@@ -11,7 +11,8 @@ const Bibliografia = () => {
     <section className="bg-[#f8f9fa] py-16 px-6 md:px-12">
       <div className="max-w-4xl mx-auto">
 
-        <h2 className="text-4xl font-bold text-[#081b33] text-center mb-12">
+        <h2 className="text-4xl font-bold text-[#081b33] text-center mb-12 flex items-center justify-center gap-3">
+          <Book size={24} className="text-[#081b33]" />
           Bibliografia
         </h2>
 

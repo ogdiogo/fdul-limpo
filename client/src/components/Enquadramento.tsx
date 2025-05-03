@@ -106,12 +106,12 @@ const Enquadramento = () => {
         </p>
 
         {/* Voltar Button */}
-        <div className="mt-10 text-center">
-          <Link
-            href="/banking-privacy-login"
-            className="inline-block bg-[#113457] text-white px-6 py-3 rounded-full shadow-md hover:bg-[#0b244a] transition"
-          >
-            Voltar
+        <div className="mt-10 flex justify-center">
+          <Link href="/banking-privacy-login">
+            <a className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#081b33] text-white text-sm font-medium rounded-2xl shadow hover:bg-[#0a274d] transition">
+              <ArrowLeft size={18} />
+              Voltar
+            </a>
           </Link>
         </div>
       </div>
