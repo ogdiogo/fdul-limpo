@@ -1,5 +1,6 @@
-import { ShieldCheck, Gavel, BookText, UserCheck, AlertTriangle, Scale, Lock, Briefcase, Banknote } from 'lucide-react';
+import { ShieldCheck, Gavel, BookText, UserCheck, AlertTriangle, Scale, Lock, Briefcase, Banknote, ArrowLeft } from 'lucide-react';
 import { useEffect } from "react";
+import { Link } from "wouter";
 
 const Supervisao = () => {
   useEffect(() => {
@@ -10,99 +11,112 @@ const Supervisao = () => {
     <section className="bg-[#f8f9fa] py-16 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-[#081b33] text-center mb-12">
-        Responsabilidade
+          Dever de Segredo da Autoridade de Supervisão
         </h2>
 
-        {/* Art. 84.º RGICSF e Código Penal */}
-        <div className="bg-white rounded-xl shadow-md p-8 border-l-4 border-[#d4af37] mb-10">
-          <div className="flex items-center gap-3 mb-4">
-            <ShieldCheck className="text-[#d4af37]" />
-            <h3 className="text-2xl font-semibold text-[#081b33]">Art. 84.º RGICSF - Violação do Dever de Sigilo Bancário</h3>
-          </div>
-          <p className="text-[#081b33]/90 text-justify">
-            Do art. 84.º RGICSF, é possível extrair que a violação do dever de segredo bancário e de supervisão é punível nos termos do Código Penal, sem prejuízo de outras sanções aplicáveis. Eventual violação do dever de segredo traduz-se, destarte, num ato ilícito, violador de um bem jurídico com dignidade penal no nosso ordenamento jurídico.
-          </p>
-          <p className="text-[#081b33]/90 mt-4 text-justify">
-            O art. 84.º do RGICSF remete para o art. 195.º do Código Penal, que tipifica o crime de violação de segredo: “Quem, sem consentimento, revelar segredo alheio de que tenha tomado conhecimento em razão do seu estado, ofício, emprego, profissão ou arte é punido com pena de prisão até 1 ano ou com pena de multa até 240 dias”. O art. 196.º CP, por sua vez, tipifica o crime de aproveitamento indevido de segredo.
-          </p>
-        </div>
-
-        {/* Responsabilidade Penal */}
+        {/* Dever de Segredo - Enquadramento */}
         <div className="bg-white rounded-xl shadow-md p-8 mb-10">
-          <div className="flex items-center gap-3 mb-4">
-            <Gavel className="text-[#081b33]" />
-            <h3 className="text-2xl font-semibold text-[#081b33]">Responsabilidade Penal</h3>
-          </div>
-          <p className="text-[#081b33]/90 text-justify">
-            No caso do art. 195.º do Código Penal estaremos perante um crime de natureza formal, de mera atividade, enquanto, no segundo caso, a tipicidade demonstra tratar-se, apenas, de um crime de dano. Tratando-se de um crime de natureza semi-pública, para que haja lugar a responsabilidade criminal, carecerá, tal como decorre do art. 198.º CP, que o ofendido/cliente formalize a queixa crime.
+          <h3 className="text-2xl font-semibold text-[#081b33]">
+            <ShieldCheck size={22} className="inline mr-2" />
+            Enquadramento
+          </h3>
+          <p className="text-[#081b33]/90 text-justify mt-4">
+            O dever de segredo da autoridade de supervisão pode ser classificado como um tipo de segredo profissional, estando este previsto no artigo 80º do Regime Geral das Instituições de Crédito e Sociedades Financeiras.
           </p>
-          <p className="text-[#081b33]/90 mt-4 text-justify">
-            No que ao segredo bancário concerne, acresce a eventual responsabilização contraordenacional por violação do dever, considerando a infração prevista na alínea m) do art. 210.º do RGICSF.
+          <p className="text-[#081b33]/90 text-justify mt-4">
+            Podem ser classificados como sujeitos passivos deste dever as pessoas que exerçam ou tenham exercido funções no Banco de Portugal, as que lhes prestem ou tenham prestado serviços a título permanente ou ocasional e ainda as autoridades, organismos e pessoas que participem na troca de informações prevista no artigo 81º.
+          </p>
+          <ul className="text-[#081b33]/90 text-justify mt-4 list-disc pl-6">
+            <li>Factos de conhecimento público não se encontram abrangidos pelo dever do segredo.</li>
+            <li>A lei não especifica que informação é abrangida pelo segredo de supervisão.</li>
+            <li>Assim, o segredo de supervisão abrange essencialmente os factos e elementos comunicados por instituições de crédito.</li>
+          </ul>
+          <p className="text-[#081b33]/90 text-justify mt-4">
+            A lei, nomeadamente o artigo 80º/3 e 4, delimita negativamente o âmbito objetivo do segredo de supervisão, ao ressalvar a “divulgação de informações confidenciais relativas a instituições de crédito no âmbito da aplicação de medidas de intervenção corretiva ou de resolução, da nomeação de uma administração provisória ou de processos de liquidação, exceto tratando-se de informações relativas a pessoas que tenham participado na recuperação ou reestruturação financeira da instituição”, assim como “informação em forma sumária ou agregada e que não permita a identificação individualizada de pessoas ou instituições”.
+          </p>
+          <p className="text-[#081b33]/90 text-justify mt-4">
+            A conduta proibida pelo dever de Sigilo é um dever de non facere, a proibição de divulgar (o ato de transmitir a informação a terceiro) ou utilizar (o proveito próprio do sujeito passivo do dever, contraposto à vontade ou interesse do titular do segredo) a informação.
           </p>
         </div>
 
-        {/* Responsabilidade Civil */}
+        {/* Bem Jurídico Tutelado */}
         <div className="bg-white rounded-xl shadow-md p-8 mb-10">
-          <div className="flex items-center gap-3 mb-4">
-            <Scale className="text-[#081b33]" />
-            <h3 className="text-2xl font-semibold text-[#081b33]">Responsabilidade Civil</h3>
-          </div>
-          <p className="text-[#081b33]/90 text-justify">
-            Em matéria civil, a violação da lei enquanto ato ilícito pode, causando dano, fazer incorrer o sujeito passivo do dever em responsabilidade civil (artigo 483.º do Código Civil), uma vez que a quebra do dever de segredo bancário configura uma violação ilícita do direito de outrem.
+          <h3 className="text-2xl font-semibold text-[#081b33]">
+            <Gavel size={22} className="inline mr-2" />
+            Bem Jurídico Tutelado (artigos 101º CRP e 26º CRP)
+          </h3>
+          <p className="text-[#081b33]/90 text-justify mt-4">
+            Existem vários direitos e interesses a ser protegidos pelo Dever de Segredo da Autoridade de Supervisão, os principais e fundamentais sendo:
           </p>
-          <p className="text-[#081b33]/90 mt-4 text-justify">
-            Visando o segredo bancário proteger a reserva da vida privada, direito consagrado no art. 80.º do Código Civil, a sua violação despoletará responsabilidade civil extracontratual por factos ilícitos, estando em causa o desrespeito pelo dever geral de abstenção imposto por um direito de personalidade. Por outro lado, a violação do segredo poderá também originar responsabilidade civil contratual, uma vez que o segredo bancário é, outrossim, um dever acessório de boa fé, por força do contrato bancário.
+          <ul className="text-[#081b33]/90 text-justify mt-4 list-disc pl-6">
+            <li>O direito à reserva da intimidade da vida privada e o direito à privacidade (26º CRP)</li>
+            <li>O interesse público na efetividade ou eficácia da supervisão (101º CRP)</li>
+            <li>A confiança nas instituições de crédito e financeiras</li>
+          </ul>
+          <p className="text-[#081b33]/90 text-justify mt-4">
+            O direito à reserva da intimidade da vida privada e à privacidade é um direito fundamental, e o dever de segredo de supervisão é essencial para a não violação deste. De facto, num extrato bancário, p.e, é possível encontrar toda a informação da esfera privada da vida de alguém, nomeadamente as suas maiores despesas, preferências.
+          </p>
+          <p className="text-[#081b33]/90 text-justify mt-4">
+            O segredo de supervisão é uma condição necessária e essencial para haver confiança no sistema. Para o Supervisor ter o poder de exigir a prestação de todas e quaisquer informações necessárias ao exercício da supervisão, há que existir, em contrapartida, o dever de manter sigilo sobre as informações obtidas ou recolhidas.
+          </p>
+          <p className="text-[#081b33]/90 text-justify mt-4">
+            Apenas garantindo a salvaguarda do dever de segredo do Supervisor é possível assegurar a confiança que nele detêm as instituições. Visa-se a efetividade do exercício da sua função, tendo esta a confiança como seu pressuposto basilar. Assim, a confiança é o principal bem jurídico tutelado, sendo esta assegurada pelo dever de segredo (entre outras coisas). Esta confiança é uma condição indispensável ao bom exercício da supervisão (bom exercício este que tem como fim a salvaguarda da estabilidade do sistema financeiro).
           </p>
         </div>
 
-        {/* Responsabilidade Disciplinar e Trabalhista */}
+        {/* Exceções */}
         <div className="bg-white rounded-xl shadow-md p-8 mb-10">
-          <div className="flex items-center gap-3 mb-4">
-            <Briefcase className="text-[#081b33]" />
-            <h3 className="text-2xl font-semibold text-[#081b33]">Responsabilidade Disciplinar e Trabalhista</h3>
-          </div>
-          <p className="text-[#081b33]/90 text-justify">
-            Sublinhe-se que da violação do dever de segredo, poderá ainda resultar, para o trabalhador sujeito passivo do dever de segredo, responsabilização disciplinar. Em causa estará o dever do funcionário da instituição de crédito “guardar lealdade à entidade patronal”, como se depreende do artigo 121.º, n.º 1, e) do Código do Trabalho.
+          <h3 className="text-2xl font-semibold text-[#081b33]">
+            <AlertTriangle size={22} className="inline mr-2" />
+            Exceções
+          </h3>
+          <p className="text-[#081b33]/90 text-justify mt-4">
+            O artigo 80º/2 refere as principais exceções ao Dever de segredo do Banco de Portugal.
           </p>
-          <p className="text-[#081b33]/90 mt-4 text-justify">
-            Acrescente-se, ainda, que o Acordo Coletivo de Trabalho do Sector Bancário impõe, expressamente, no seu artigo 34.º/1, c), aos trabalhadores das instituições de crédito “o dever de guardar sigilo profissional, de acordo com os termos e limitações legais”.
+          <p className="text-[#081b33]/90 text-justify mt-4">
+            Não se aplicam no contexto de dever de segredo de supervisão as exceções previstas no artigo 79º.
+          </p>
+          <p className="text-[#081b33]/90 text-justify mt-4">
+            A primeira exceção existe mediante a autorização do interessado para poder divulgar ou utilizar a informação, sendo esta transmitida ao Banco de Portugal. A exceção por autorização do interessado existe em vários outros casos na ordem jurídica, nomeadamente em casos de administração de bens próprios do cônjuge (artigo 1678º/2/g) CC).
+          </p>
+          <p className="text-[#081b33]/90 text-justify mt-4">
+            A segunda exceção existe nos termos previstos na lei, seja esta a lei geral tributária (artigo 63º-B da Lei Geral Tributária), a lei penal (o artigo 242º do CP, p.e) ou a lei de processo penal (artigos 135º e 182º, p.e).
           </p>
         </div>
 
-        {/* Responsabilidade Fiscal */}
+        {/* Responsabilidade, no caso de violação do dever de segredo */}
         <div className="bg-white rounded-xl shadow-md p-8 mb-10">
-          <div className="flex items-center gap-3 mb-4">
-            <Banknote className="text-[#081b33]" />
-            <h3 className="text-2xl font-semibold text-[#081b33]">Responsabilidade Fiscal</h3>
-          </div>
-          <p className="text-[#081b33]/90 text-justify">
-            Em matéria fiscal, cumpre referir o segredo fiscal, previsto e regulado pelo artigo 64.º da LGT. Este assegura aos contribuintes uma garantia de confidencialidade, concretizável na obrigação dos dirigentes, funcionários e agentes da administração tributária e aduaneira, a guardar sigilo sobre os dados recolhidos que digam respeito à situação tributária do contribuinte e dos elementos de natureza pessoal que obtenham no procedimento. Abrange, ainda, as informações protegidas pelo segredo bancário, que a administração tributária tenha tido acesso, tanto por via da derrogação administrativa como através de autorização judicial.
+          <h3 className="text-2xl font-semibold text-[#081b33]">
+            <Scale size={22} className="inline mr-2" />
+            Responsabilidade, no caso de violação do dever de segredo
+          </h3>
+          <p className="text-[#081b33]/90 text-justify mt-4">
+            A violação do dever de segredo é punível nos termos da Lei Penal, tal como refere o artigo 84º do RGICSF. Este artigo remete-nos para o artigo 195º do CP, que estabelece a violação deste dever como o revelar de segredo alheio de que tenha tomado conhecimento em razão do seu “estado, ofício, emprego, profissão ou arte”, sem o consentimento do titular do segredo, ou seja, refere-se à divulgação do segredo.
           </p>
-          <p className="text-[#081b33]/90 mt-4 text-justify">
-            Enquanto o segredo bancário atua enquanto espécie de armadura de proteção ao leque de informações do contribuinte, enquanto primeira linha de defesa, o sigilo fiscal funciona enquanto uma garantia posterior, atuando sobre a utilização da informação previamente adquirida.
+          <p className="text-[#081b33]/90 text-justify mt-4">
+            Já o artigo 196º tipifica o crime de aproveitamento indevido do segredo, ou seja, refere-se à utilização da informação obtida.
           </p>
-        </div>
-
-        {/* Sanções pela Violação do Sigilo Fiscal */}
-        <div className="bg-white rounded-xl shadow-md p-8 border-l-4 border-[#dc2626]">
-          <div className="flex items-center gap-3 mb-4">
-            <AlertTriangle className="text-[#dc2626]" />
-            <h3 className="text-2xl font-semibold text-[#081b33]">Sanções pela Violação do Sigilo Fiscal</h3>
-          </div>
-          <p className="text-[#081b33]/90 text-justify">
-            A consagração do segredo fiscal corresponde à extensão e reconhecimento do direito à privacidade no âmbito da atividade tributária, abrangendo os dados de natureza pessoal dos contribuintes e os dados expressivos da sua situação tributária, os quais só podem ser revelados a terceiros nos casos expressamente previstos na lei, destinados a intervir por motivo social imperioso, estritamente na medida do necessário para satisfazer o equilíbrio dos interesses em causa.
+          <p className="text-[#081b33]/90 text-justify mt-4">
+            Também a infração prevista na alínea m) do artigo 210º do RGICSF é neste caso potencialmente aplicável.
           </p>
-          <p className="text-[#081b33]/90 mt-4 text-justify">
-            A sua violação dolosa encontra-se prevista e punida enquanto crime tributário comum, pelo artigo 91.º do RGIT. Esta sanção será agravada no caso do infrator revelar a informação protegida pelo segredo com o intuito de obter para si ou para outrem um benefício ilegítimo ou de causar prejuízo ao interesse público, ao sistema de segurança social ou a terceiros, conduta que culmina na aplicação de uma pena de prisão até três anos ou multa até 360 dias.
-          </p>
-          <p className="text-[#081b33]/90 mt-4 text-justify">
-            A sua violação, a título de negligência, está prevista no artigo 115.º do RGIT, culminando na aplicação ao infrator de uma coima entre 75 a 1500 euros.
+          <p className="text-[#081b33]/90 text-justify mt-4">
+            Finalmente, pode ser considerado o artigo 483º do CC, responsabilizando o sujeito segundo o regime da responsabilidade civil.
           </p>
         </div>
 
         <p className="text-sm text-center text-[#6b7280] mt-12">
           Última atualização: 1 de maio de 2025
         </p>
+
+        {/* Voltar Button */}
+        <div className="mt-10 flex justify-center">
+          <Link href="/banking-privacy-login">
+            <a className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#081b33] text-white text-sm font-medium rounded-2xl shadow hover:bg-[#0a274d] transition">
+              <ArrowLeft size={18} />
+              Voltar
+            </a>
+          </Link>
+        </div>
       </div>
     </section>
   );
