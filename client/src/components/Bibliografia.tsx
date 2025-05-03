@@ -1,4 +1,4 @@
-import { Book } from 'lucide-react';
+import { Book, ArrowLeft } from 'lucide-react';
 import { useEffect } from 'react';
 import { Link } from 'wouter';
 
