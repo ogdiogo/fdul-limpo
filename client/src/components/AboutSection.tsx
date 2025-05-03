@@ -22,7 +22,7 @@ const teamMembers: TeamMember[] = [
       "Beatriz Abrantes tem mais de 30 anos de experiência no setor financeiro internacional. É formada em Economia pela Universidade de Lisboa e doutorada em Finanças pela London School of Economics.",
       "Ocupou cargos de direção em diversas instituições bancárias na Europa e nos Estados Unidos, previamente à fundação de Glosadores e Associados em 2005. É reconhecida pela sua visão estratégica e compromisso com a excelência."
     ],
-    image: "/images/og.jpg",
+    image: "",
     alt: "Beatriz Abrantes"
   },
   {
