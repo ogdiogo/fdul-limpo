@@ -1,5 +1,7 @@
 import { ShieldCheck, Gavel, BookText, UserCheck, AlertTriangle, Scale, Lock, Briefcase, Banknote } from 'lucide-react';
 import { useEffect } from "react";
+import { Link } from 'wouter';
+
 
 const Responsabilidade = () => {
   useEffect(() => {
