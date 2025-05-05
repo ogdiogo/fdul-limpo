@@ -1,4 +1,4 @@
-import { ShieldCheck, Gavel, BookText, UserCheck, AlertTriangle, Scale, Lock, Briefcase, Banknote } from 'lucide-react';
+import { ShieldCheck, Gavel, BookText, UserCheck, AlertTriangle, Scale, Lock, Briefcase, Banknote, ArrowLeft } from 'lucide-react';
 import { useEffect } from "react";
 import { Link } from "wouter";
 

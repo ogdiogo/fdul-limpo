@@ -1,4 +1,4 @@
-import { Gavel, Scale, Banknote } from 'lucide-react';
+import { Gavel, Scale, Banknote, ArrowLeft } from 'lucide-react';
 import { useEffect } from "react";
 import { Link } from "wouter";
 
