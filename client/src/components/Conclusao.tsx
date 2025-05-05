@@ -98,11 +98,18 @@ const Conclusao = () => {
           <p className="text-[#081b33]/90 mt-4 text-justify">
             A sua violação, a título de negligência, está prevista no artigo 115.º do RGIT, culminando na aplicação ao infrator de uma coima entre 75 a 1500 euros.
           </p>
+          
         </div>
 
-        <p className="text-sm text-center text-[#6b7280] mt-12">
-          Última atualização: 1 de maio de 2025
-        </p>
+
+        <div className="mt-10 flex justify-center">
+          <Link href="/banking-privacy-login">
+            <a className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#081b33] text-white text-sm font-medium rounded-2xl shadow hover:bg-[#0a274d] transition">
+              <ArrowLeft size={18} />
+              Voltar
+            </a>
+          </Link>
+        </div>
       </div>
     </section>
   );

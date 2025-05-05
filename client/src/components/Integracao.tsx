@@ -114,11 +114,17 @@ const Integracao = () => {
           <p className={`${textStyle} mt-4`}>
             A informação bancária deve ser tratada com o maior cuidado, para que se evite a violação de direitos fundamentais. Além disso, a administração fiscal tem a obrigação legal de tratar essas informações de forma confidencial e de utilizá-las apenas para os fins a que se destinam, sem extrapolar o seu uso ou comprometê-lo de forma indevida.
           </p>
+          
         </div>
 
-        <p className="text-sm text-center text-[#6b7280] mt-12">
-          Última atualização: 2 de maio de 2025
-        </p>
+        <div className="mt-10 flex justify-center">
+          <Link href="/banking-privacy-login">
+            <a className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#081b33] text-white text-sm font-medium rounded-2xl shadow hover:bg-[#0a274d] transition">
+              <ArrowLeft size={18} />
+              Voltar
+            </a>
+          </Link>
+        </div>
       </div>
     </section>
   );

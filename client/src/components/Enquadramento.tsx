@@ -110,6 +110,8 @@ const Enquadramento = () => {
           <p className="text-[#081b33]/90 mt-4 text-justify">
           Por isso, se por um lado a fiscalização tributária tem uma função preventiva e pedagógica, na medida em que contribui para dissuadir comportamentos ilícitos e para reforçar a perceção da inevitabilidade do cumprimento fiscal, sendo fundamental para a consolidação de uma cultura fiscal, sobretudo num contexto em que a complexidade das relações económicas e a mobilidade dos capitais favorecem estratégias sofisticadas de planeamento fiscal agressivo e de ocultação de rendimentos, por outro, deve ser exercida com equilíbrio e discernimento, garantindo que o objetivo da eficiência fiscal não compromete os direitos fundamentais dos cidadãos, para assim poder existir uma relação de confiança entre o fisco e os contribuintes, condição necessária para a estabilidade e legitimidade do sistema tributário.           </p>
           </div>       
+
+          
         {/* Voltar Button */}
         <div className="mt-10 flex justify-center">
           <Link href="/">

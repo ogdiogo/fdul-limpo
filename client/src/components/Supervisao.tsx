@@ -84,30 +84,6 @@ const Supervisao = () => {
           </p>
         </div>
 
-        {/* Responsabilidade, no caso de violação do dever de segredo */}
-        <div className="bg-white rounded-xl shadow-md p-8 mb-10">
-          <h3 className="text-2xl font-semibold text-[#081b33]">
-            <Scale size={22} className="inline mr-2" />
-            Responsabilidade, no caso de violação do dever de segredo
-          </h3>
-          <p className="text-[#081b33]/90 text-justify mt-4">
-            A violação do dever de segredo é punível nos termos da Lei Penal, tal como refere o artigo 84º do RGICSF. Este artigo remete-nos para o artigo 195º do CP, que estabelece a violação deste dever como o revelar de segredo alheio de que tenha tomado conhecimento em razão do seu “estado, ofício, emprego, profissão ou arte”, sem o consentimento do titular do segredo, ou seja, refere-se à divulgação do segredo.
-          </p>
-          <p className="text-[#081b33]/90 text-justify mt-4">
-            Já o artigo 196º tipifica o crime de aproveitamento indevido do segredo, ou seja, refere-se à utilização da informação obtida.
-          </p>
-          <p className="text-[#081b33]/90 text-justify mt-4">
-            Também a infração prevista na alínea m) do artigo 210º do RGICSF é neste caso potencialmente aplicável.
-          </p>
-          <p className="text-[#081b33]/90 text-justify mt-4">
-            Finalmente, pode ser considerado o artigo 483º do CC, responsabilizando o sujeito segundo o regime da responsabilidade civil.
-          </p>
-        </div>
-
-        <p className="text-sm text-center text-[#6b7280] mt-12">
-          Última atualização: 1 de maio de 2025
-        </p>
-
         {/* Voltar Button */}
         <div className="mt-10 flex justify-center">
           <Link href="/banking-privacy-login">
