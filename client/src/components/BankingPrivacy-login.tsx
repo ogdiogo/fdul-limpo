@@ -20,7 +20,7 @@ const BankingPrivacy = () => {
             <span className="block text-lg text-[#d4af37] font-medium mt-1 italic">
               O compromisso que o protege
             </span>
-            <span className="block w-24 h-1 bg-[#d4af37] rounded-full mt-2 mx-auto"></span>
+            <span className="block mx-auto h-1 bg-[#d4af37] rounded-full mt-2 max-w-xs"></span>
           </h2>
           <p className="mt-4 text-2xl font-semibold text-[#081b33]/90">
             Bem-vinda, Sra. Prof. Regente Rute Saraiva
