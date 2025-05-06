@@ -38,66 +38,74 @@ const BankingPrivacy = () => {
 
         {/* Navigation Links List */}
         <div className="mt-10">
-          <h3 className="text-2xl font-bold text-[#081b33] mb-6">Recursos Relacionados:</h3>
-          <ul className="space-y-4 pl-6 list-[upper-roman] text-[#081b33] text-xl">
-            <li>
-              <Link
-                href="/enquadramento"
-                className="font-semibold hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
-              >
-                Enquadramento
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/limitacoes"
-                className="font-semibold hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
-              >
-                Limitações
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/integracao"
-                className="font-semibold hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
-              >
-                Integração
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/supervisao"
-                className="font-semibold hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
-              >
-                Supervisão
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/responsabilidade"
-                className="font-semibold hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
-              >
-                Responsabilidade
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/conclusao"
-                className="font-semibold hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
-              >
-                Conclusão
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/bibliografia"
-                className="font-semibold hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
-              >
-                Bibliografia
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <h3 className="text-2xl font-bold text-[#081b33] mb-6">Recursos Relacionados:</h3>
+        <ul className="space-y-4 text-[#081b33] text-xl">
+          <li className="flex gap-2">
+            <span className="w-8">I.</span>
+            <Link
+              href="/enquadramento"
+              className="font-semibold hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
+            >
+              Enquadramento
+            </Link>
+          </li>
+          <li className="flex gap-2">
+            <span className="w-8">II.</span>
+            <Link
+              href="/limitacoes"
+              className="font-semibold hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
+            >
+              Limitações
+            </Link>
+          </li>
+          <li className="flex gap-2">
+            <span className="w-8">III.</span>
+            <Link
+              href="/integracao"
+              className="font-semibold hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
+            >
+              Integração
+            </Link>
+          </li>
+          <li className="flex gap-2">
+            <span className="w-8">IV.</span>
+            <Link
+              href="/supervisao"
+              className="font-semibold hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
+            >
+              Supervisão
+            </Link>
+          </li>
+          <li className="flex gap-2">
+            <span className="w-8">V.</span>
+            <Link
+              href="/responsabilidade"
+              className="font-semibold hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
+            >
+              Responsabilidade
+            </Link>
+          </li>
+          <li className="flex gap-2">
+            <span className="w-8">VI.</span>
+            <Link
+              href="/conclusao"
+              className="font-semibold hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
+            >
+              Conclusão
+            </Link>
+          </li>
+          <li className="flex gap-2">
+            <span className="w-8">VII.</span>
+            <Link
+              href="/bibliografia"
+              className="font-semibold hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
+            >
+              Bibliografia
+            </Link>
+          </li>
+        </ul>
+      </div>
+
 
       </div>
     </section>
