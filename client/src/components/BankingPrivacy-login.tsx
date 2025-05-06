@@ -27,9 +27,7 @@ const BankingPrivacy = () => {
             Bem-vinda, Sra. Prof. Regente Rute Saraiva
           </p>
         </div>
-      </div>
-    </div>
-
+        </div>
 
         {/* Main Content */}
         <div className="bg-white rounded-xl shadow-md p-8 border border-[#d4af37]/10">
