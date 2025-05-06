@@ -16,7 +16,7 @@ const Bibliografia = () => {
           Bibliografia
         </h2>
 
-        <div className="bg-white rounded-xl shadow-md p-8 border-l-4 border-[#6366f1]">
+        <div className="bg-white rounded-xl shadow-md p-8 border-l-4 border-[#d4af37]">
           <ul className="list-disc pl-6 space-y-6 text-[#081b33]/90 text-justify leading-relaxed">
             <li>
               Banco de Portugal. (1847). <i>Regulamento para a Administração do Banco de Portugal.</i> Disponível em: <a href="https://www.csassociados.pt/xms/files/v2/Site_2018/Outros_Conteudos_RPD/Sociedades_Seculos_XVII_XVIII_e_XIX/1847RegAdmBancoPortugal.pdf" target="_blank" className="text-blue-600 underline">csassociados.pt</a>
