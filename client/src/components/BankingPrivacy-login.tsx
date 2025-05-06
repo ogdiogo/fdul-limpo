@@ -12,20 +12,24 @@ const BankingPrivacy = () => {
   
   return (
     <section id="privacy" className="py-12 bg-[#f8f9fa] font-sans">     
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex items-center justify-center min-h-screen bg-white">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Title */}
-        <div className="text-center mb-8">
+        <div className="mb-8">
           <h2 className="text-5xl font-extrabold text-[#081b33] tracking-tight relative pb-4">
             Sigilo Bancário
             <span className="block text-lg text-[#d4af37] font-medium mt-1 italic">
               O compromisso que o protege
             </span>
-            <span className="block w-24 h-1 bg-[#d4af37] rounded-full mt-2"></span>
+            <span className="block w-24 h-1 bg-[#d4af37] rounded-full mt-2 mx-auto"></span>
           </h2>
           <p className="mt-4 text-2xl font-semibold text-[#081b33]/90">
             Bem-vinda, Sra. Prof. Regente Rute Saraiva
           </p>
         </div>
+      </div>
+    </div>
+
 
         {/* Main Content */}
         <div className="bg-white rounded-xl shadow-md p-8 border border-[#d4af37]/10">
