@@ -14,6 +14,25 @@ const Supervisao = () => {
           Dever de Segredo da Autoridade de Supervisão
         </h2>
 
+
+
+        <div className="bg-white rounded-xl shadow-md p-8 mb-10">
+          <h3 className="text-2xl font-semibold text-[#081b33]">
+            <Briefcase size={22} className="inline mr-2" />
+            O Banco de Portugal enquanto Autoridade de Supervisão
+          </h3>
+          <p className="text-[#081b33]/90 text-justify mt-4">
+          Na supervisão das instituições de crédito e sociedades financeiras, o Banco de Portugal é a autoridade em Portugal. Esta autoridade advém da sua competência legal como autoridade administrativa independente.           </p>
+          <p className="text-[#081b33]/90 text-justify mt-4">
+          O artigo 17º da Lei Orgânica do Banco de Portugal atribui-lhe a competência para “exercer a supervisão das instituições de crédito, sociedades financeiras e outras entidades que lhe estejam legalmente sujeitas”, competência esta cujo propósito é o de “assegurar a estabilidade do sistema financeiro e a solidez das instituições” (artigo 14º do Regime Geral das Instituições de Crédito).          </p>
+          <p className="text-[#081b33]/90 text-justify mt-4">
+          As suas principais funções de supervisão resumem-se na garantia da solidez financeira das instituições de crédito e sociedades financeiras e na proteção dos clientes bancários.          </p>
+          <p className="text-[#081b33]/90 text-justify mt-4">
+          Tendo em conta o poder que é atribuído a esta autoridade no exercício das suas funções, é essencial equiparar a este um dever de sigilo no âmbito da sua atividade.   </p>    
+           </div>
+
+
+
         {/* Dever de Segredo - Enquadramento */}
         <div className="bg-white rounded-xl shadow-md p-8 mb-10">
           <h3 className="text-2xl font-semibold text-[#081b33]">
