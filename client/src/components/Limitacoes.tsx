@@ -96,7 +96,7 @@ O Código de Processo Civil, por sua vez, contempla situações em que a quebr
         {/* O Sigilo Bancário e o Direito Fiscal */}
         <div className="bg-white rounded-xl shadow-md p-8 mb-10">
           <div className="flex items-center gap-3 mb-4">
-            <ArrowLeft className="text-[#081b33]" />
+            <Briefcase className="text-[#081b33]" />
             <h3 className="text-2xl font-semibold text-[#081b33]">O Sigilo Bancário e o Direito Fiscal</h3>
           </div>
           <p className="text-[#081b33]/90 text-justify">A questão do sigilo bancário torna-se particularmente relevante no contexto do Direito Fiscal. A legislação fiscal portuguesa reconhece a importância do acesso a informações bancárias para garantir uma tributação justa e eficaz, especialmente no combate à fraude fiscal e à evasão de impostos. A CRP, nos artigos 101º a 107º estabelece que a administração fiscal tem como objetivo primordial garantir a prosperidade económica e a justiça social, tendo como princípio fundamental a boa tributação. O acesso às informações bancárias pode permitir uma melhor fiscalização dos rendimentos e lucros das empresas, possibilitando então uma tributação mais justa, eficiente e equilibrada. 

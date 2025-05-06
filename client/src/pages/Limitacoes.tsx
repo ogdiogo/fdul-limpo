@@ -8,7 +8,7 @@ const Limitacoes = () => {
     <div>
       {/* Use Helmet to define metadata */}
       <Helmet>
-        <title>Limitacoes - Sigilo Bancário</title>
+        <title>Limitações - Sigilo Bancário</title>
         <meta
           name="description"
           content="Limitacoes"
