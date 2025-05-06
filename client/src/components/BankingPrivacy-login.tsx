@@ -38,12 +38,12 @@ const BankingPrivacy = () => {
 
         {/* Navigation Links List */}
         <div className="mt-10">
-          <h3 className="text-xl font-bold text-[#081b33] mb-4">Recursos Relacionados:</h3>
-          <ul className="space-y-3 pl-4 list-disc text-[#081b33]">
+          <h3 className="text-2xl font-bold text-[#081b33] mb-6">Recursos Relacionados:</h3>
+          <ul className="space-y-4 pl-6 list-[upper-roman] text-[#081b33] text-xl">
             <li>
               <Link
                 href="/enquadramento"
-                className="text-lg font-medium text-[#081b33] hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
+                className="font-semibold hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
               >
                 Enquadramento
               </Link>
@@ -51,7 +51,7 @@ const BankingPrivacy = () => {
             <li>
               <Link
                 href="/limitacoes"
-                className="text-lg font-medium text-[#081b33] hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
+                className="font-semibold hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
               >
                 Limitações
               </Link>
@@ -59,7 +59,7 @@ const BankingPrivacy = () => {
             <li>
               <Link
                 href="/integracao"
-                className="text-lg font-medium text-[#081b33] hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
+                className="font-semibold hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
               >
                 Integração
               </Link>
@@ -67,7 +67,7 @@ const BankingPrivacy = () => {
             <li>
               <Link
                 href="/supervisao"
-                className="text-lg font-medium text-[#081b33] hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
+                className="font-semibold hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
               >
                 Supervisão
               </Link>
@@ -75,7 +75,7 @@ const BankingPrivacy = () => {
             <li>
               <Link
                 href="/responsabilidade"
-                className="text-lg font-medium text-[#081b33] hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
+                className="font-semibold hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
               >
                 Responsabilidade
               </Link>
@@ -83,7 +83,7 @@ const BankingPrivacy = () => {
             <li>
               <Link
                 href="/conclusao"
-                className="text-lg font-medium text-[#081b33] hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
+                className="font-semibold hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
               >
                 Conclusão
               </Link>
@@ -91,14 +91,14 @@ const BankingPrivacy = () => {
             <li>
               <Link
                 href="/bibliografia"
-                className="text-lg font-medium text-[#081b33] hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
+                className="font-semibold hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
               >
                 Bibliografia
               </Link>
             </li>
-            {/* Add more list items here in the future */}
           </ul>
         </div>
+
       </div>
     </section>
   );
