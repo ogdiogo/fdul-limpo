@@ -15,10 +15,6 @@ const Conclusao = () => {
         </h2>
 
         <div className="bg-white rounded-xl shadow-md p-8 mb-10">
-          <div className="flex items-center gap-3 mb-4">
-            <ShieldCheck className="text-[#d4af37]" />
-            <h3 className="text-2xl font-semibold text-[#081b33]">O Sigilo Bancário</h3>
-          </div>
           <p className="text-[#081b33]/90 text-justify">
             O segredo bancário é fundamental na relação estabelecida entre a Instituição de Crédito e o seu Cliente, que deve prezar e salvaguardar a privacidade do cliente e pautar-se pela confiança entre as partes.
           </p>
