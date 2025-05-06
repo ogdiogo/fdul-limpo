@@ -19,6 +19,7 @@ import Supervisao from "@/pages/Supervisao";
 import Bibliografia from "@/pages/Bibliografia";
 import Enquadramento from "@/pages/Enquadramento";
 import Integracao from "@/pages/Integracao";
+import Limitacoes from "@/pages/Limitacoes";
 
 function Router() {
   return (
@@ -28,6 +29,7 @@ function Router() {
             <Route path="/banking-privacy" component={BankingPrivacy} />
             <Route path="/banking-privacy-login" component={BankingPrivacyLogin} />
             <Route path="/enquadramento" component={Enquadramento} />
+            <Route path="/limitacoes" component={Limitacoes} />
             <Route path="/integracao" component={Integracao} />
             <Route path="/supervisao" component={Supervisao} />
             <Route path="/responsabilidade" component={Responsabilidade} />

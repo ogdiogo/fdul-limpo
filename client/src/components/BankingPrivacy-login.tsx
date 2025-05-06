@@ -50,6 +50,14 @@ const BankingPrivacy = () => {
             </li>
             <li>
               <Link
+                href="/limitacoes"
+                className="text-lg font-medium text-[#081b33] hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
+              >
+                Limitações
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/integracao"
                 className="text-lg font-medium text-[#081b33] hover:text-[#d4af37] transition duration-200 underline underline-offset-4 decoration-[#d4af37]/50"
               >
