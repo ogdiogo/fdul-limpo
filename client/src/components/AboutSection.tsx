@@ -35,7 +35,7 @@ const teamMembers: TeamMember[] = [
       "Gustavo Cordeiro juntou-se à equipa em 2010, trazendo consigo uma vasta experiência em operações bancárias e gestão de riscos. É formado em Gestão pelo ISCTE com MBA pelo INSEAD.",
       "Desde que assumiu a chefia, implementámos sistemas financeiros inovadores que melhoraram significativamente a segurança e eficiência das nossas operações, estando sempre focados na satisfação dos nossos clientes."
     ],
-    image: "",
+    image: "/images/gcordeiro.jpg",
     alt: "Gustavo Cordeiro"
   },
   {
